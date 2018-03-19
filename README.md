@@ -1,4 +1,4 @@
-# Grupa12-TimNestoSmijesno
+﻿# Grupa12-TimNestoSmijesno
 
 ## Tema
 Lanac hotela "Bugojanac"
@@ -18,7 +18,7 @@ Aplikacija ima ulogu da pojednostavi i pomogne vlasniku da upravlja svojim lance
   Administrator ima mogućnost dodavanja i brisanja svih uposlenika, dok menadžer hotela ima pravo dodavanja i brisanja uposlenika hotela kojim upravlja.
   
 #### Rezervacije:
-  Registrovani korisnici imaju mogućnost da pregledaju slobodne termine i rezervišu željeni termin, uslugu i izvrše uplatu, nakon čega dobivaju račun.
+  Registrovani korisnici imaju mogućnost da pregledaju slobodne termine i rezervišu željeni termin, uslugu i izvrše uplatu, nakon čega dobivaju račun. 
   
 #### Pregled ponude:
   Svi korisnici sistema imaju mogućnost pregleda ponuda koje nudi svaki od hotela, pregleda slobodnih smještaja po terminima, kao i dodatnih usluga uključenih u aranžman. Ukoliko odluči da rezerviše neku od usluga, korisnik mora biti registrovan. Ako nije, bit će poslan na stranicu za registraciju.
@@ -43,5 +43,5 @@ Aplikacija ima ulogu da pojednostavi i pomogne vlasniku da upravlja svojim lance
 
 1. Administrator: vodi evidenciju o cjelokupnom stanju svakog hotela. Ima pristup svemu
 2. Menadžer hotela: vodi evidenciju o stanju u hotelu. Ima pristup svim podacima vezanim za hotel kojim upravlja
-3. Registrovani korisnik: Pregled smještaja i usluga koje su rezervisali, kao i komentare i ocjene prethodnih korisnika.
+3. Registrovani korisnik: Pregled smještaja i usluga koje su rezervisali, pisati komentare i davati ocjene kao i pregled komentare i ocjene prethodnih korisnika.
 4. Gost korisnik: Pregled ponude hotela, kao i komentare i ocjene gostiju. 
