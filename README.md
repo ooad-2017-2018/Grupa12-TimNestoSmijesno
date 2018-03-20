@@ -35,6 +35,7 @@ Aplikacija ima ulogu da pojednostavi i pomogne vlasniku da upravlja svojim lance
 - Mogućnost dodavanja novih zaposlenih i određivanja njihovih privilegija (konobari imaju uvid u stanje kafića i restorana, recepcija u rezervacije itd..)
 - Mogućnost dodavanja i uklanjanja hotela (Administrator)
 - Mogućnost dodavanja i uklanjanja usluga u hotelima (Administrator i hotel menadžer)
+-Pretraživanje hotela po lokaciji na kojoj se nalaze
 
 
 
