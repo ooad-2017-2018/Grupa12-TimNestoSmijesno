@@ -26,19 +26,5 @@ namespace LanacHotela
         {
             this.InitializeComponent();
         }
-
-        private async void Button_Click(object sender, RoutedEventArgs e)
-        {
-            TB1.Visibility = Visibility.Visible;
-            TB1.Text = "Svača čast. Cijenimo vašu iskrenost!";
-            
-        }
-
-        private async void button2_Click(object sender, RoutedEventArgs e)
-        {
-            TB1.Visibility = Visibility.Visible;
-            TB1.Text = "Ne Nur. Ne valja lagati!";
-
-        }
     }
 }
