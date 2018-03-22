@@ -25735,11 +25735,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nele_\\Desktop\\LanacHotela\\LanacHotela\\LanacHotela.csproj",
+      "projectUniqueName": "C:\\Users\\nele_\\Desktop\\OOAD PROJEKAT\\Projekat\\LanacHotela\\LanacHotela\\LanacHotela.csproj",
       "projectName": "LanacHotela",
-      "projectPath": "C:\\Users\\nele_\\Desktop\\LanacHotela\\LanacHotela\\LanacHotela.csproj",
+      "projectPath": "C:\\Users\\nele_\\Desktop\\OOAD PROJEKAT\\Projekat\\LanacHotela\\LanacHotela\\LanacHotela.csproj",
       "packagesPath": "C:\\Users\\nele_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nele_\\Desktop\\LanacHotela\\LanacHotela\\obj\\",
+      "outputPath": "C:\\Users\\nele_\\Desktop\\OOAD PROJEKAT\\Projekat\\LanacHotela\\LanacHotela\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
