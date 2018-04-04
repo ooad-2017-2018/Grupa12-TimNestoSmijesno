@@ -7,11 +7,11 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="62e79aaf-1b85-4646-bc12-fd2587e4957f"
+    Name="ca5205d7-449e-4097-9e97-e635cfb0fd32"
     Publisher="CN=nele_"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="62e79aaf-1b85-4646-bc12-fd2587e4957f" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="ca5205d7-449e-4097-9e97-e635cfb0fd32" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>LanacHotela</DisplayName>

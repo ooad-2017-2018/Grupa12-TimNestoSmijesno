@@ -26,5 +26,37 @@ namespace LanacHotela
         {
             this.InitializeComponent();
         }
+
+        private void AppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void pocetna_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ponude_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void kontakt_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void login_Click(object sender, RoutedEventArgs e)
+        {
+            Page novi = new BlankPage1();
+            this.Content = novi;
+
+        }
+
+        private void signup_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

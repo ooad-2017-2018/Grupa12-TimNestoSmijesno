@@ -132,15 +132,17 @@ namespace LanacHotela.LanacHotela_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
-            _typeNameTable[0] = "LanacHotela.MainPage";
+            _typeNameTable = new string[4];
+            _typeNameTable[0] = "LanacHotela.BlankPage1";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "LanacHotela.MainPage";
 
-            _typeTable = new global::System.Type[3];
-            _typeTable[0] = typeof(global::LanacHotela.MainPage);
+            _typeTable = new global::System.Type[4];
+            _typeTable[0] = typeof(global::LanacHotela.BlankPage1);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::LanacHotela.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -175,7 +177,8 @@ namespace LanacHotela.LanacHotela_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::LanacHotela.MainPage(); }
+        private object Activate_0_BlankPage1() { return new global::LanacHotela.BlankPage1(); }
+        private object Activate_3_MainPage() { return new global::LanacHotela.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -187,9 +190,9 @@ namespace LanacHotela.LanacHotela_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  LanacHotela.MainPage
+            case 0:   //  LanacHotela.BlankPage1
                 userType = new global::LanacHotela.LanacHotela_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+                userType.Activator = Activate_0_BlankPage1;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -200,6 +203,13 @@ namespace LanacHotela.LanacHotela_XamlTypeInfo
 
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::LanacHotela.LanacHotela_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 3:   //  LanacHotela.MainPage
+                userType = new global::LanacHotela.LanacHotela_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_3_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
             }
             return xamlType;

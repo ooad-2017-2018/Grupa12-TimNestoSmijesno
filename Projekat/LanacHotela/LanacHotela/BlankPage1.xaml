@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="LanacHotela.BlankPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LanacHotela"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel x:Name="loginstek" Orientation="Vertical" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2">
+            <TextBlock x:Name="tekst1" Text="Dobro došli u lanac hotela Bugojanac" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30"/>
+            <TextBlock x:Name="korisnik" Text="Korisnicko ime: "   FontSize="30" Margin="15,150,0,0" />
+            <TextBox x:Name="korisnickoime" Height="40" Margin="250,-40,30,0" />
+            <TextBlock x:Name="sifra" Text="Sifra: "   FontSize="30" Margin="15,40,0,0" />
+            <TextBox x:Name="sifrakorisnika" Height="40" Margin="250,-40,30,0" />
+            <Button x:Name="zaboravljenasifra" Content="Zaboravljena sifra" Height="30" Width="150" HorizontalAlignment="Right" Margin="0,15,30,0"/>
+            <Button x:Name="dugmeDalje" Content="Prijavi se" Height="40" Width="150" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,15,30,0"/>
+            <TextBlock x:Name="nemanaloga" Text="Nemate račun. Kreirajte ga" FontSize="20" Margin="15,15,0,0"/>
+            <Button x:Name="kreirajracun" Content="Kreirajte ga" Height="30" Width="150" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,-25,30,15" />
+
+
+
+
+        </StackPanel>
+    </Grid>
+</Page>

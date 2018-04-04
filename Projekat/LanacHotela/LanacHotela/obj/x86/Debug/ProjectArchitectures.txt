@@ -1,1 +1,1 @@
-C:\Users\jelen\Documents\Grupa12-TimNestoSmijesno\Projekat\LanacHotela\LanacHotela\LanacHotela.csproj;x86
+C:\Users\nele_\Desktop\LanacHotela\LanacHotela\LanacHotela.csproj;x86
