@@ -1,0 +1,81 @@
+﻿<Page x:Class="LanacHotela.BlankPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LanacHotela"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+     >
+    
+
+    
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="VisualStateGroup">
+                <VisualState x:Name="mobitel">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0">
+                        </AdaptiveTrigger>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="tablet">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="700">
+                        </AdaptiveTrigger>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="desktop">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="700" MinWindowHeight="700">
+                        </AdaptiveTrigger>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="tekst1.GridRow" Value="1"/>
+                        <Setter Target="korisnik.Margin" Value="15,150,0,0" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <TextBlock x:Name="naslov" Text="Log in forma" Grid.Column="0" Grid.Row="0" FontSize="30" TextWrapping="WrapWholeWords" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBlock x:Name="welcome" Text="Dobro došli u lanac hotela 'Bugojanac'" Grid.Column="1" Grid.Row="1" FontSize="30" TextWrapping="WrapWholeWords"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        
+        <Grid x:Name="radnidio" Grid.Row="2" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="korisnik" Text="Korisnicko ime: " Grid.Row="0" Grid.Column="1" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            <TextBox x:Name="korisnikbox" Height="40"  TextChanged="korisnickoime_TextChanged" Grid.Row="0" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Stretch" />
+            <TextBlock x:Name="sifra" Text="Sifra: " Grid.Row="1" Grid.Column="1" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            <TextBox x:Name="sifrabox" Height="40"  TextChanged="sifrabox_TextChanged" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Stretch" />
+            <Button x:Name="zaboravljenasifra" Content="Zaboravljena sifra" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Right" />
+            <TextBlock x:Name="nemanaloga" Text="Jos nemate korisnicki racun? Napravite ga" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <Button x:Name="kreirajracun" Content="Kreirajte ga" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" />
+            <Button x:Name="dugmeDalje" Content="Prijavi se"  HorizontalAlignment="Right" Grid.Row="4" Grid.Column="2" VerticalAlignment="Center"/>
+            <Button x:Name="dugmeNazad" Content="Nazad" Click="dugmeNazad_Click" HorizontalAlignment="Left" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center"  />
+            
+        </Grid>
+        
+    </Grid>
+</Page>
