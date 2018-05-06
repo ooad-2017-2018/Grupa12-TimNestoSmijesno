@@ -6347,26 +6347,21 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nele_\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
+    "C:\\Users\\jelen\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nele_\\Desktop\\OOAD PROJEKAT\\Projekat\\LanacHotela\\LanacHotela\\LanacHotela.csproj",
+      "projectUniqueName": "C:\\Users\\jelen\\Google Drive\\2. Godina\\4.Semestar\\Objektno Orijentirana Analiza i Dizajn\\Grupa12-TimNestoSmijesno\\Projekat\\LanacHotela\\LanacHotela\\LanacHotela.csproj",
       "projectName": "LanacHotela",
-      "projectPath": "C:\\Users\\nele_\\Desktop\\OOAD PROJEKAT\\Projekat\\LanacHotela\\LanacHotela\\LanacHotela.csproj",
-      "packagesPath": "C:\\Users\\nele_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nele_\\Desktop\\OOAD PROJEKAT\\Projekat\\LanacHotela\\LanacHotela\\obj\\",
+      "projectPath": "C:\\Users\\jelen\\Google Drive\\2. Godina\\4.Semestar\\Objektno Orijentirana Analiza i Dizajn\\Grupa12-TimNestoSmijesno\\Projekat\\LanacHotela\\LanacHotela\\LanacHotela.csproj",
+      "packagesPath": "C:\\Users\\jelen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jelen\\Google Drive\\2. Godina\\4.Semestar\\Objektno Orijentirana Analiza i Dizajn\\Grupa12-TimNestoSmijesno\\Projekat\\LanacHotela\\LanacHotela\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\nele_\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\jelen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "uap10.0.16299"
@@ -6386,7 +6381,7 @@
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
-            "version": "[6.0.8, )"
+            "version": "6.0.8"
           }
         },
         "imports": [

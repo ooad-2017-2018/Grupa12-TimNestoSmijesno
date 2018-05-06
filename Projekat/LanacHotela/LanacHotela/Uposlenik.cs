@@ -8,12 +8,29 @@ namespace LanacHotela
 {
     class Uposlenik : Osoba
     {
-        public int idUposlenika;
-        private static int idbrojac = 1000;
-        public int plata;
+        private int idUposlenika;
+        private static int idBrojac = 100;
+        
+        private int plata;
         public DateTime datumZaposlenja;
         public DateTime datumPrestankaRada;
-        public int idHotela; //u kojem radi uposlenik
-        public string pozicija; //radno mjesto uposlenika
+        private int idHotela; //u kojem radi uposlenik
+        private string pozicija; //radno mjesto uposlenika
+
+        public Uposlenik( global::System.Int32 plata, DateTime datumZaposlenja, DateTime datumPrestankaRada, global::System.Int32 idHotela, global::System.String pozicija)
+        {
+            this.idUposlenika = idBrojac++;
+            this.plata = plata;
+            this.datumZaposlenja = datumZaposlenja;
+            this.datumPrestankaRada = datumPrestankaRada;
+            this.idHotela = idHotela;
+            this.pozicija = pozicija;
+            idbBrojac++;
+        }
+
+        public global::System.Int32 IdUposlenika { get => idUposlenika; set => idUposlenika = value; }
+        public global::System.Int32 Plata { get => plata; set => plata = value; }
+        public global::System.Int32 IdHotela { get => idHotela; set => idHotela = value; }
+        public global::System.String Pozicija { get => pozicija; set => pozicija = value; }
     }
 }
