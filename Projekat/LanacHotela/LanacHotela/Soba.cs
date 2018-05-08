@@ -18,7 +18,7 @@ namespace LanacHotela
         private List<Ocjena> listaOcjena;
         private List<Komentar> listaKomentara;
 
-        public Soba(global::System.Int32 idSobe, Hotel hotelSobe, global::System.Double cijenaPoNoci, global::System.Int32 brojKreveta, global::System.Boolean balkon)
+        public Soba(Hotel hotelSobe, global::System.Double cijenaPoNoci, global::System.Int32 brojKreveta, global::System.Boolean balkon)
         {
             this.idSobe = idBrojac++;
             this.hotelSobe = hotelSobe;
