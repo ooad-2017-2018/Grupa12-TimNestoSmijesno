@@ -10,6 +10,7 @@ namespace LanacHotela
     {
         private int idHotela;
         private static int idBrojac = 1000;
+        private string imeHotela;
         private Uposlenik menadzer;
         private int brojZvjezdica;
         private List<Soba> listaSoba = new List<Soba>();
@@ -20,9 +21,10 @@ namespace LanacHotela
         private string email;
         private List<Usluge> listaUsluga = new List<Usluge>();
 
-        public Hotel(Uposlenik menadzer, global::System.Int32 brojZvjezdica, List<Soba> listaSoba, List<RezervacijaSmjestaja> listaRezervacija, List<Uposlenik> listaUposlenika, global::System.String lokacija, global::System.String brojTelefona, global::System.String email, List<Usluge> listaUsluga)
+        public Hotel(global::System.String i, Uposlenik menadzer, global::System.Int32 brojZvjezdica, List<Soba> listaSoba, List<RezervacijaSmjestaja> listaRezervacija, List<Uposlenik> listaUposlenika, global::System.String lokacija, global::System.String brojTelefona, global::System.String email, List<Usluge> listaUsluga)
         {
             this.idHotela = idBrojac+1;
+            this.imeHotela = i;
             this.menadzer = menadzer;
             this.brojZvjezdica = brojZvjezdica;
             this.listaSoba = listaSoba;
@@ -46,6 +48,7 @@ namespace LanacHotela
         public global::System.String Email { get => email; set => email = value; }
         public List<Usluge> ListaUsluga { get => listaUsluga; set => listaUsluga = value; }
         public static global::System.Int32 IdBrojac { get => idBrojac; set => idBrojac = value; }
+        public string ImeHotela { get => imeHotela; set => imeHotela = value; }
 
         public void dodajRezervaciju(RezervacijaSmjestaja novaRezervacija)
         {
