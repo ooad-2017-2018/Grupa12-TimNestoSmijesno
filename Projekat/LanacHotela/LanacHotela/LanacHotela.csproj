@@ -98,6 +98,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="GostHotela.cs" />
+    <Compile Include="GostHotelaViewModel.cs" />
     <Compile Include="Hotel.cs" />
     <Compile Include="Kartica.cs" />
     <Compile Include="Komentar.cs" />
@@ -120,6 +121,7 @@
     <Compile Include="SpaAndWellness.cs" />
     <Compile Include="Uposlenik.cs" />
     <Compile Include="Usluge.cs" />
+    <Compile Include="UslugeViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">

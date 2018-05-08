@@ -17,6 +17,7 @@ namespace LanacHotela
         private string radnoVrijeme;
         private Ocjena ocjena;
         private Komentar komentar;
+        private List<string> listaKomentara;
 
         public Usluge(global::System.String nazivUsluge, global::System.Double cijena, global::System.String terminiDostupnosti, List<Object> listaSlika, global::System.String radnoVrijeme, Ocjena ocjena, Komentar komentar)
         {
@@ -38,6 +39,8 @@ namespace LanacHotela
         public global::System.String RadnoVrijeme { get => radnoVrijeme; set => radnoVrijeme = value; }
         internal Ocjena Ocjena { get => ocjena; set => ocjena = value; }
         internal Komentar Komentar { get => komentar; set => komentar = value; }
+        public List<object> ListaSlika { get => listaSlika; set => listaSlika = value; }
+        public List<string> ListaKomentara { get => listaKomentara; set => listaKomentara = value; }
 
         public void DodajKomentar(Komentar noviKomentar)
         {
