@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LanacHotela
 {
-    class GostHotelaViewModel
+    public class GostHotelaViewModel
     {
         public void DodajRezervaciju()
         {

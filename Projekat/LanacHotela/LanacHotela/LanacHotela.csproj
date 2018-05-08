@@ -118,6 +118,7 @@
     <Compile Include="Restoran.cs" />
     <Compile Include="RezervacijaSmjestaja.cs" />
     <Compile Include="Soba.cs" />
+    <Compile Include="SobaViewModel.cs" />
     <Compile Include="SpaAndWellness.cs" />
     <Compile Include="Uposlenik.cs" />
     <Compile Include="Usluge.cs" />

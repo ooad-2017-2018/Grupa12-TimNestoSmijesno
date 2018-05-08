@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LanacHotela
 {
-    class UslugeViewModel
+    public class UslugeViewModel
     {
         public List<Usluge> PregledUsluga(Hotel h)
         {
