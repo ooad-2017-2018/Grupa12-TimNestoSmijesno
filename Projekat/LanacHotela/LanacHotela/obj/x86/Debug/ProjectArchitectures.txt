@@ -1,1 +1,1 @@
-C:\Users\jelen\Google Drive\2. Godina\4.Semestar\Objektno Orijentirana Analiza i Dizajn\Grupa12-TimNestoSmijesno\Projekat\LanacHotela\LanacHotela\LanacHotela.csproj;x86
+C:\Users\nele_\Desktop\Projekat moj dio\LanacHotela\LanacHotela\LanacHotela.csproj;x86

@@ -33,10 +33,10 @@ namespace LanacHotela
 
         }
 
-        public List<RezervacijaSmjestaja> MojeRezervacije(GostHotela g, LanacHotela l)
+        public List<RezervacijaSmjestaja> MojeRezervacije(GostHotela g)
         {
             List<RezervacijaSmjestaja> lista = new List<RezervacijaSmjestaja>();
-            foreach(Hotel x in l.ListaHotela)
+            foreach(Hotel x in LanacHotela.ListaHotela)
             {
                 foreach(RezervacijaSmjestaja r in x.ListaRezervacija)
                 {

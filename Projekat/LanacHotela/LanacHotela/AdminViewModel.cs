@@ -3,24 +3,32 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Controls;
 
 namespace LanacHotela
 {
-    public class AdminViewModel
+    public static class AdminViewModel
     {
-        public void DodajUposlenika (LanacHotela lanac, global::System.String ime, global::System.String prezime, global::System.String korisnickoIme, global::System.String sifra, Object slika, global::System.String jmbg, DateTime datumRodjenja, global::System.String email, global::System.String brojTelefona, global::System.Int32 plata, DateTime datumZaposlenja, DateTime datumPrestankaRada, global::System.Int32 idHotela, global::System.String pozicija)
+        public static void DodajUposlenika (string ime, string prezime, string korisnickoIme, string sifra, Image slika, string jmbg, DateTime datumRodjenja,
+                                     string email, string brojTelefona, int plata, DateTime datumZaposlenja,  int idHotela, string pozicija)
         {
-            Uposlenik u = new Uposlenik(ime, prezime, korisnickoIme, sifra, slika, jmbg, datumRodjenja, email, brojTelefona, plata, datumZaposlenja, datumPrestankaRada, idHotela, pozicija);
-            foreach(Hotel h in lanac.ListaHotela) if(idHotela==h.IdHotela)
+            Uposlenik u = new Uposlenik(ime, prezime, korisnickoIme, sifra, slika, jmbg, datumRodjenja, email, brojTelefona, plata,
+                datumZaposlenja, idHotela, pozicija);
+            foreach(Hotel h in LanacHotela.ListaHotela) if(idHotela==h.IdHotela)
                 {
                     h.ListaUposlenika.Add(u);
                 }
+            foreach(Osoba o in LanacHotela.ListaKorisnika)
+            {
+                if (u.Jmbg == o.Jmbg) LanacHotela.ListaKorisnika.Remove(o);
+            }
+            LanacHotela.ListaKorisnika.Add(u);
 
         }
 
-        public void BrisiUposlenika(Uposlenik u, LanacHotela lanac)
+        public static void BrisiUposlenika(Uposlenik u)
         {
-            foreach(Hotel h in lanac.ListaHotela)
+            foreach(Hotel h in LanacHotela.ListaHotela)
             {
                     foreach(Uposlenik p in h.ListaUposlenika)
                     {
@@ -33,9 +41,9 @@ namespace LanacHotela
                 }
             }
         
-        public void DodajUposlenika(Uposlenik u, LanacHotela l)
+        public static void DodajUposlenika(Uposlenik u)
         {
-            foreach(Hotel h in l.ListaHotela)
+            foreach(Hotel h in LanacHotela.ListaHotela)
             {
                 if (u.IdHotela == h.IdHotela)
                 {
@@ -47,11 +55,16 @@ namespace LanacHotela
                     h.ListaUposlenika.Add(u);
                 }
             }
+            foreach (Osoba o in LanacHotela.ListaKorisnika)
+            {
+                if (u.Jmbg == o.Jmbg) LanacHotela.ListaKorisnika.Remove(o);
+            }
+            LanacHotela.ListaKorisnika.Add(u);
         }
 
-        public void BrisiUposlenika(string nazivhotela, string imeuposlenika, string prezimeuposlenika, string jmbguposlenika, LanacHotela lanac)
+        public static void BrisiUposlenika(string nazivhotela, string imeuposlenika, string prezimeuposlenika, string jmbguposlenika)
         {
-            foreach (Hotel h in lanac.ListaHotela)
+            foreach (Hotel h in LanacHotela.ListaHotela)
             {
                 if (h.ImeHotela == nazivhotela)
                 {
@@ -67,34 +80,34 @@ namespace LanacHotela
             }
         }
 
-        public void DodajHotel(LanacHotela l ,global::System.String i, Uposlenik menadzer, global::System.Int32 brojZvjezdica, List<Soba> listaSoba, List<RezervacijaSmjestaja> listaRezervacija, List<Uposlenik> listaUposlenika, global::System.String lokacija, global::System.String brojTelefona, global::System.String email, List<Usluge> listaUsluga)
+        public static  void DodajHotel(global::System.String i, Uposlenik menadzer, global::System.Int32 brojZvjezdica, List<Soba> listaSoba, List<RezervacijaSmjestaja> listaRezervacija, List<Uposlenik> listaUposlenika, global::System.String lokacija, global::System.String brojTelefona, global::System.String email, List<Usluge> listaUsluga)
         {
             Hotel h = new Hotel(i, menadzer, brojZvjezdica, listaSoba, listaRezervacija, listaUposlenika, lokacija, brojTelefona, email, listaUsluga);
-            foreach (Hotel x in l.ListaHotela)
+            foreach (Hotel x in LanacHotela.ListaHotela)
             {
                 if (x.IdHotela == h.IdHotela) throw new Exception("Već postoji ta rezervacija za ovog korisnika");
 
             }
-            l.ListaHotela.Add(h);
+            LanacHotela.ListaHotela.Add(h);
          }
 
-        public void DodajHotel (LanacHotela l, Hotel h)
+        public static void DodajHotel ( Hotel h)
         {
-            foreach(Hotel x in l.ListaHotela)
+            foreach(Hotel x in LanacHotela.ListaHotela)
             {
                 if(x==h) throw new Exception("Već postoji ovaj hotel u lancu hotela");
 
             }
         }
 
-        public void BrisiHotel(LanacHotela l, Hotel h)
+        public  static void BrisiHotel( Hotel h)
         {
             bool nasao = false;
-            foreach (Hotel x in l.ListaHotela)
+            foreach (Hotel x in LanacHotela.ListaHotela)
             {
                 if (x == h)
                 {
-                    l.ListaHotela.Remove(x);
+                    LanacHotela.ListaHotela.Remove(x);
                     nasao = true;
                     break;
                 }
@@ -103,14 +116,14 @@ namespace LanacHotela
 
         }
 
-        public void BrisiHotel (LanacHotela l, string ime)
+        public static void BrisiHotel ( string ime)
         {
-            foreach(Hotel x in l.ListaHotela)
+            foreach(Hotel x in LanacHotela.ListaHotela)
             {
                 bool nasao = false;
                 if (x.ImeHotela == ime)
                 {
-                    l.ListaHotela.Remove(x);
+                    LanacHotela.ListaHotela.Remove(x);
                     nasao = true;
                     break;
                 }

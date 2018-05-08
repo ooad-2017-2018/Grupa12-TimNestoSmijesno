@@ -1,0 +1,206 @@
+﻿<Page
+    x:Class="LanacHotela.DodajUposlenika"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LanacHotela"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" MinHeight="500" >
+    <ScrollViewer>
+
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="VisualStateGroup">
+                <VisualState x:Name="mobitel">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="imeforme.FontSize" Value="15" />
+                        <Setter Target="ime.FontSize" Value="15" />
+                        <Setter Target="imebox.FontSize" Value="15" />
+                        <Setter Target="imebox.Height" Value="30" />
+                        <Setter Target="prezime.FontSize" Value="15" />
+                        <Setter Target="prezimebox.FontSize" Value="15" />
+                        <Setter Target="prezimebox.Height" Value="30" />
+                        <Setter Target="jmbg.FontSize" Value="15" />
+                        <Setter Target="jmbgbox.FontSize" Value="15" />
+                        <Setter Target="jmbgbox.Height" Value="30" />
+                        <Setter Target="korisnickoime.FontSize" Value="15" />
+                        <Setter Target="korisnickoimebox.FontSize" Value="15" />
+                        <Setter Target="korisnickoimebox.Height" Value="30" />
+                        <Setter Target="sifra.FontSize" Value="15" />
+                        <Setter Target="sifrabox.FontSize" Value="15" />
+                        <Setter Target="sifrabox.Height" Value="30" />
+                        <Setter Target="datumrodjenja.FontSize" Value="15" />
+                        <Setter Target="datumrodjenjabox.FontSize" Value="15" />
+                        <Setter Target="datumrodjenjabox.Height" Value="30" />
+                        <Setter Target="email.FontSize" Value="15" />
+                        <Setter Target="emailbox.FontSize" Value="15" />
+                        <Setter Target="emailbox.Height" Value="30" />
+                        <Setter Target="brojtelefona.FontSize" Value="15" />
+                        <Setter Target="brojtelefonabox.FontSize" Value="15" />
+                        <Setter Target="brojtelefonabox.Height" Value="30" />
+                        <Setter Target="radnomjesto.FontSize" Value="15" />
+                        <Setter Target="radnomjestobox.FontSize" Value="15" />
+                        <Setter Target="radnomjestobox.Height" Value="30" />
+                        <Setter Target="pozicija.FontSize" Value="15" />
+                        <Setter Target="pozicijabox.FontSize" Value="15" />
+                        <Setter Target="pozicijabox.Height" Value="30" />
+                        <Setter Target="plata.FontSize" Value="15" />
+                        <Setter Target="platabox.FontSize" Value="15" />
+                        <Setter Target="platabox.Height" Value="30" />
+                        <Setter Target="slika.FontSize" Value="15" />
+                        <Setter Target="nazivslike.FontSize" Value="15" />
+                        <Setter Target="dugmeodaberi.FontSize" Value="15" />
+                        <Setter Target="dugmeunesi.FontSize" Value="15"/>
+                        <Setter Target="dugmenazad.FontSize" Value="15"/>
+
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="tablet">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="641">
+                        </AdaptiveTrigger>
+                        <AdaptiveTrigger MinWindowHeight="641"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="imeforme.FontSize" Value="15" />
+                        <Setter Target="ime.FontSize" Value="15" />
+                        <Setter Target="imebox.FontSize" Value="15" />
+                        <Setter Target="imebox.Height" Value="30" />
+                        <Setter Target="prezime.FontSize" Value="15" />
+                        <Setter Target="prezimebox.FontSize" Value="15" />
+                        <Setter Target="prezimebox.Height" Value="30" />
+                        <Setter Target="jmbg.FontSize" Value="15" />
+                        <Setter Target="jmbgbox.FontSize" Value="15" />
+                        <Setter Target="jmbgbox.Height" Value="30" />
+                        <Setter Target="korisnickoime.FontSize" Value="15" />
+                        <Setter Target="korisnickoimebox.FontSize" Value="15" />
+                        <Setter Target="korisnickoimebox.Height" Value="30" />
+                        <Setter Target="sifra.FontSize" Value="15" />
+                        <Setter Target="sifrabox.FontSize" Value="15" />
+                        <Setter Target="sifrabox.Height" Value="30" />
+                        <Setter Target="datumrodjenja.FontSize" Value="15" />
+                        <Setter Target="datumrodjenjabox.FontSize" Value="15" />
+                        <Setter Target="datumrodjenjabox.Height" Value="30" />
+                        <Setter Target="email.FontSize" Value="15" />
+                        <Setter Target="emailbox.FontSize" Value="15" />
+                        <Setter Target="emailbox.Height" Value="30" />
+                        <Setter Target="brojtelefona.FontSize" Value="15" />
+                        <Setter Target="brojtelefonabox.FontSize" Value="15" />
+                        <Setter Target="brojtelefonabox.Height" Value="30" />
+                        <Setter Target="radnomjesto.FontSize" Value="15" />
+                        <Setter Target="radnomjestobox.FontSize" Value="15" />
+                        <Setter Target="radnomjestobox.Height" Value="30" />
+                        <Setter Target="pozicija.FontSize" Value="15" />
+                        <Setter Target="pozicijabox.FontSize" Value="15" />
+                        <Setter Target="pozicijabox.Height" Value="30" />
+                        <Setter Target="plata.FontSize" Value="15" />
+                        <Setter Target="platabox.FontSize" Value="15" />
+                        <Setter Target="platabox.Height" Value="30" />
+                        <Setter Target="slika.FontSize" Value="15" />
+                        <Setter Target="nazivslike.FontSize" Value="15" />
+                        <Setter Target="dugmeodaberi.FontSize" Value="15" />
+                        <Setter Target="dugmeunesi.FontSize" Value="15"/>
+                        <Setter Target="dugmenazad.FontSize" Value="15"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="desktop">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="1008" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="6,0,0,0">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" MinHeight="40" />
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*" MinHeight="40"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*" MinHeight="40"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*" MinHeight="40"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*" MinHeight="40"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*" MinHeight="40"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*" MinHeight="40"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*" MinHeight="40"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*" MinHeight="40"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*" MinHeight="40"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*" MinHeight="40"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*" MinHeight="40"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*" MinHeight="40"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*" MinHeight="40"/>
+            <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock x:Name="imeforme" Text="Unos uposlenika " Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        
+        <TextBlock x:Name="ime" Text="Ime: " Grid.Row="2" Grid.Column="1" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <TextBox x:Name="imebox" Grid.Row="2" Grid.Column="2"  Height="35"/>
+        
+        <TextBlock x:Name="prezime" Text="Prezime: " Grid.Row="4" Grid.Column="1" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <TextBox x:Name="prezimebox" Grid.Row="4" Grid.Column="2"  Height="35"/>
+        
+        <TextBlock x:Name="jmbg" Text="JMBG: " Grid.Row="6" Grid.Column="1" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <TextBox x:Name="jmbgbox" Grid.Row="6" Grid.Column="2"  Height="35"/>
+        
+        <TextBlock x:Name="korisnickoime" Text="Korisnicko ime: " Grid.Row="8" Grid.Column="1" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <TextBox x:Name="korisnickoimebox" Grid.Row="8" Grid.Column="2"  Height="35"/>
+        
+        <TextBlock x:Name="sifra" Text="Sifra: " Grid.Row="10" Grid.Column="1" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <PasswordBox x:Name="sifrabox" Grid.Row="10" Grid.Column="2"   Height="35"/>
+        
+        <TextBlock x:Name="datumrodjenja" Text="Datum rođenja: " Grid.Row="12" Grid.Column="1" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <DatePicker x:Name="datumrodjenjabox" Grid.Row="12" Grid.Column="2"   Height="35"/>
+        
+        <TextBlock x:Name="email" Text="E-mail: " Grid.Row="14" Grid.Column="1" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <TextBox x:Name="emailbox" Grid.Row="14" Grid.Column="2"  Height="35"/>
+        
+        <TextBlock x:Name="brojtelefona" Text="Broj telefona: " Grid.Row="16" Grid.Column="1" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <TextBox x:Name="brojtelefonabox" Grid.Row="16" Grid.Column="2" Height="35"/>
+        
+        <TextBlock x:Name="radnomjesto" Text="Radno mjesto: " Grid.Row="18" Grid.Column="1" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <ComboBox x:Name="radnomjestobox" Grid.Row="18" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Height="35"/>
+        
+        <TextBlock x:Name="pozicija" Text="Pozicija: " Grid.Row="20" Grid.Column="1" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <ComboBox x:Name="pozicijabox" Grid.Row="20" Grid.Column="2"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Height="35"/>
+
+        <TextBlock x:Name="plata" Text="Plata: " Grid.Row="22" Grid.Column="1" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <TextBox x:Name="platabox" Grid.Row="22" Grid.Column="2"  Height="35"/>
+
+            <TextBlock x:Name="slika" Text="Slika: " Grid.Row="24" Grid.Column="1" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Image x:Name="slikabox" Grid.Row="24" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Right" MaxWidth="200"/>
+        <TextBlock x:Name="nazivslike" Text=" " Grid.Row="24" Grid.Column="2" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="left" MaxWidth="200"/>
+        <Button x:Name="dugmeodaberi" Content="Odaberi" Grid.Row="24" Grid.Column="2" FontSize="20" VerticalAlignment="Stretch" HorizontalAlignment="Right" MaxWidth="200" Click="dugmeodaberi_Click" />
+
+        <Button x:Name="dugmeunesi" Content="Unesi" Grid.Row="26" Grid.Column="2" FontSize="20" VerticalAlignment="Stretch" HorizontalAlignment="Right" MaxWidth="200" Click="dugmeunesi_Click"/>
+        <Button x:Name="dugmenazad" Content="Nazad" Grid.Row="26" Grid.Column="2" FontSize="20" VerticalAlignment="Stretch" HorizontalAlignment="Left" MaxWidth="200" Click="dugmenazad_Click" AutomationProperties.IsRequiredForForm="True"/>
+
+    </Grid>
+        </ScrollViewer>
+</Page>

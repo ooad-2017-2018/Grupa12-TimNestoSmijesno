@@ -3,34 +3,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Controls;
 
 namespace LanacHotela
 {
-    public class LanacHotela
+    public static class LanacHotela
     {
-        private string imeLanca;
-        private List<Hotel> listaHotela;
-        private List<Osoba> listaKorisnika;
+        private static string imeLanca;
+        private static List<Hotel> listaHotela = new List<Hotel>{ Kontejnerska.hotel1, Kontejnerska.hotel2, Kontejnerska.hotel3 };
+        private static List<Osoba> listaKorisnika = new List<Osoba> {Kontejnerska.nur, Kontejnerska.jelena, Kontejnerska.nedim, Kontejnerska.mustafa };
 
-        public LanacHotela(global::System.String imeLanca, List<Hotel> listaHotela, List<Osoba> listaKorisnika)
-        {
-            this.imeLanca = imeLanca;
-            this.listaHotela = listaHotela;
-            this.listaKorisnika = listaKorisnika;
-        }
+        
+        public static string ImeLanca { get => imeLanca; set => imeLanca = value; }
+        public static List<Hotel> ListaHotela { get => listaHotela; set => listaHotela = value; }
+        public static List<Osoba> ListaKorisnika { get => listaKorisnika; set => listaKorisnika = value; }
 
-        public string ImeLanca { get => imeLanca; set => imeLanca = value; }
-        public List<Hotel> ListaHotela { get => listaHotela; set => listaHotela = value; }
-        public List<Osoba> ListaKorisnika { get => listaKorisnika; set => listaKorisnika = value; }
-
-        public void BrisiHotel(Hotel h)
+       
+        public static void BrisiHotel(Hotel h)
         {
             foreach(Hotel x in ListaHotela)
             {
                 if (x == h) ListaHotela.Remove(x);
             }
         }
-        public void BrisiKorisnika(Osoba o)
+        public static void BrisiKorisnika(Osoba o)
         {
             foreach (Osoba x in ListaKorisnika)
             {
@@ -38,7 +34,7 @@ namespace LanacHotela
             }
 
         }
-        public void DodajKorisnika(Osoba korisnik)
+        public static void DodajKorisnika(Osoba korisnik)
         {
             foreach (Osoba x in ListaKorisnika)
             {
@@ -47,7 +43,7 @@ namespace LanacHotela
             }
             listaKorisnika.Add(korisnik);
         }
-        public void DodajHotel(Hotel hotel)
+        public static void DodajHotel(Hotel hotel)
         {
             foreach (Hotel x in listaHotela)
             {
@@ -56,6 +52,7 @@ namespace LanacHotela
             }
             listaHotela.Add(hotel);
         }
+       
 
     }
 }

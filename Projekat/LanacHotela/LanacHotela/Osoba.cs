@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Controls;
 
 namespace LanacHotela
 {
@@ -12,13 +13,14 @@ namespace LanacHotela
         private string prezime;
         private string korisnickoIme;
         private string sifra;
-        public Object slika;
+        public Image slika;
         private string jmbg;
         public DateTime datumRodjenja;
         private string email;
         private string brojTelefona;
 
-        public Osoba(global::System.String ime, global::System.String prezime, global::System.String korisnickoIme, global::System.String sifra, Object slika, global::System.String jmbg, DateTime datumRodjenja, global::System.String email, global::System.String brojTelefona)
+        public Osoba(string ime, string prezime, string korisnickoIme,string sifra, Image slika, string jmbg, DateTime datumRodjenja, 
+                     string email, string brojTelefona)
         {
             this.ime = ime;
             this.prezime = prezime;
@@ -31,12 +33,19 @@ namespace LanacHotela
             this.brojTelefona = brojTelefona;
         }
 
-        public global::System.String Ime { get => ime; set => ime = value; }
-        public global::System.String Prezime { get => prezime; set => prezime = value; }
-        public global::System.String KorisnickoIme { get => korisnickoIme; set => korisnickoIme = value; }
-        public global::System.String Sifra { get => sifra; set => sifra = value; }
-        public global::System.String Jmbg { get => jmbg; set => jmbg = value; }
-        public global::System.String Email { get => email; set => email = value; }
-        public global::System.String BrojTelefona { get => brojTelefona; set => brojTelefona = value; }
+        public string Ime { get => ime; set => ime = value; }
+        public string Prezime { get => prezime; set => prezime = value; }
+        public string KorisnickoIme { get => korisnickoIme; set => korisnickoIme = value; }
+        public string Sifra { get => sifra; set => sifra = value; }
+        public string Jmbg { get => jmbg; set => jmbg = value; }
+        public string Email { get => email; set => email = value; }
+        public string BrojTelefona { get => brojTelefona; set => brojTelefona = value; }
+
+        public override string ToString()
+        {
+            return string.Format("{0} {1}", Ime, Prezime);
+
+        }
     }
+    
 }

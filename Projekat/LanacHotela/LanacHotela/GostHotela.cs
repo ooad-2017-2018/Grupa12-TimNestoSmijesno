@@ -1,4 +1,11 @@
-﻿namespace LanacHotela
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Windows.UI.Xaml.Controls;
+
+namespace LanacHotela
 {
     public class GostHotela : Osoba
     {
@@ -7,7 +14,8 @@
         private string brojLicnailiPasosa;
         private Kartica platnaKartica;
 
-        public GostHotela(System.String ime, System.String prezime, System.String korisnickoIme, System.String sifra, System.Object slika, System.String jmbg, System.DateTime datumRodjenja, System.String email, System.String brojTelefona, global::System.String brojLicnailiPasosa, Kartica platnaKartica) : base(ime, prezime, korisnickoIme, sifra, slika, jmbg, datumRodjenja, email, brojTelefona)
+        public GostHotela(string ime, string prezime, string korisnickoIme, string sifra, Image slika, string jmbg, DateTime datumRodjenja, 
+                          string email, string brojTelefona, string brojLicnailiPasosa, Kartica platnaKartica) : base(ime, prezime, korisnickoIme, sifra, slika, jmbg, datumRodjenja, email, brojTelefona)
         {
             this.idGost = idBrojac++;
             this.brojLicnailiPasosa = brojLicnailiPasosa;

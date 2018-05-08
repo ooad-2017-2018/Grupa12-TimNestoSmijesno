@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Controls;
 
 namespace LanacHotela
 {
     public class Uposlenik : Osoba
     {
         private int idUposlenika;
-        private static int idBrojac = 100;
+        private static int idBrojac = 1000;
         
         private int plata;
         public DateTime datumZaposlenja;
@@ -17,16 +18,19 @@ namespace LanacHotela
         private int idHotela; //u kojem radi uposlenik
         private string pozicija; //radno mjesto uposlenika
 
-        public Uposlenik(global::System.String ime, global::System.String prezime, global::System.String korisnickoIme, global::System.String sifra, Object slika, global::System.String jmbg, DateTime datumRodjenja, global::System.String email, global::System.String brojTelefona, global::System.Int32 plata, DateTime datumZaposlenja, DateTime datumPrestankaRada, global::System.Int32 idHotela, global::System.String pozicija):base(ime, prezime,korisnickoIme, sifra, slika, jmbg,datumRodjenja, email,brojTelefona)
+        public Uposlenik(string ime, string prezime, string korisnickoIme, string sifra, Image slika, string jmbg, DateTime datumRodjenja,
+                        string email, string brojTelefona, int plata, DateTime datumZaposlenja, 
+                        int idHotela, string pozicija):base(ime, prezime,korisnickoIme, sifra, slika, jmbg, datumRodjenja, email, brojTelefona)
         {
-            this.idUposlenika = idBrojac++;
+            this.idUposlenika = idBrojac;
             this.plata = plata;
             this.datumZaposlenja = datumZaposlenja;
-            this.datumPrestankaRada = datumPrestankaRada;
+            this.datumPrestankaRada = DateTime.MinValue;
             this.idHotela = idHotela;
             this.pozicija = pozicija;
             idBrojac++;
         }
+        
 
         public global::System.Int32 IdUposlenika { get => idUposlenika; set => idUposlenika = value; }
         public global::System.Int32 Plata { get => plata; set => plata = value; }

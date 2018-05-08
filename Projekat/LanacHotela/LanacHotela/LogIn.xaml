@@ -4,11 +4,10 @@
     xmlns:local="using:LanacHotela"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
+    mc:Ignorable="d" 
      >
-    
 
-    
+
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
@@ -19,63 +18,116 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
-            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="8*" />
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
-        <VisualStateManager.VisualStateGroups>
+
+            <VisualStateManager.VisualStateGroups>
             <VisualStateGroup x:Name="VisualStateGroup">
                 <VisualState x:Name="mobitel">
                     <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="0">
-                        </AdaptiveTrigger>
+                        <AdaptiveTrigger MinWindowWidth="0" />
                     </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="naslov.FontSize" Value="15" />
+                        <Setter Target="welcome.FontSize" Value="15" />
+                        <Setter Target="korisnik.FontSize" Value="15" />
+                        <Setter Target="korisnikbox.FontSize" Value="15" />
+                        <Setter Target="korisnikbox.Height" Value="25" />
+
+                        <Setter Target="sifra.FontSize" Value="15" />
+                        <Setter Target="sifrabox.FontSize" Value="15" />
+                        <Setter Target="sifrabox.Height" Value="25" />
+
+                        <Setter Target="zaboravljenasifra.FontSize" Value="15" />
+                        <Setter Target="nemanaloga.FontSize" Value="15" />
+                        <Setter Target="dugmeDalje.FontSize" Value="15" />
+                        <Setter Target="dugmeNazad.FontSize" Value="15" />
+
+                    </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="tablet">
                     <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="700">
-                        </AdaptiveTrigger>
+                        <AdaptiveTrigger MinWindowWidth="700"/>
                     </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="naslov.FontSize" Value="15" />
+                        <Setter Target="welcome.FontSize" Value="15" />
+                        <Setter Target="korisnik.FontSize" Value="15" />
+                        <Setter Target="korisnikbox.FontSize" Value="15" />
+                        <Setter Target="korisnikbox.Height" Value="25" />
+
+                        <Setter Target="sifra.FontSize" Value="15" />
+                        <Setter Target="sifrabox.FontSize" Value="15" />
+                        <Setter Target="sifrabox.Height" Value="25" />
+
+                        <Setter Target="zaboravljenasifra.FontSize" Value="15" />
+                        <Setter Target="nemanaloga.FontSize" Value="15" />
+                        <Setter Target="dugmeDalje.FontSize" Value="15" />
+                        <Setter Target="dugmeNazad.FontSize" Value="15" />
+                    </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="desktop">
                     <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="700" MinWindowHeight="700">
-                        </AdaptiveTrigger>
+                        <AdaptiveTrigger MinWindowWidth="1000" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="tekst1.GridRow" Value="1"/>
-                        <Setter Target="korisnik.Margin" Value="15,150,0,0" />
+                        <Setter Target="naslov.FontSize" Value="15" />
+                        <Setter Target="welcome.FontSize" Value="15" />
+                        <Setter Target="korisnik.FontSize" Value="15" />
+                        <Setter Target="korisnikbox.FontSize" Value="15" />
+                        <Setter Target="korisnikbox.Height" Value="25" />
+
+                        <Setter Target="sifra.FontSize" Value="15" />
+                        <Setter Target="sifrabox.FontSize" Value="15" />
+                        <Setter Target="sifrabox.Height" Value="25" />
+
+                        <Setter Target="zaboravljenasifra.FontSize" Value="15" />
+                        <Setter Target="nemanaloga.FontSize" Value="15" />
+                        <Setter Target="dugmeDalje.FontSize" Value="15" />
+                        <Setter Target="dugmeNazad.FontSize" Value="15" />
                     </VisualState.Setters>
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
-        <TextBlock x:Name="naslov" Text="Log in forma" Grid.Column="0" Grid.Row="0" FontSize="30" TextWrapping="WrapWholeWords" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <TextBlock x:Name="welcome" Text="Dobro došli u lanac hotela 'Bugojanac'" Grid.Column="1" Grid.Row="1" FontSize="30" TextWrapping="WrapWholeWords"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        
+
+        <TextBlock x:Name="naslov" Text="Log in forma"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"  FontSize="25" TextWrapping="WrapWholeWords" FontWeight="Normal" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBlock x:Name="welcome" Text="Dobro došli u lanac hotela 'Bugojanac'" Grid.Column="1"  Grid.Row="1" FontSize="25" TextWrapping="WrapWholeWords"  HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+
         <Grid x:Name="radnidio" Grid.Row="2" Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*" MinHeight="40"/>
                 <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*" MinHeight="40"/>
                 <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*" MinHeight="40"/>
                 <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*" MinHeight="40"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*" MinHeight="40"/>
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="10*"/>
-                <ColumnDefinition Width="10*"/>
-                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="*" MinWidth="12"/>
+                <ColumnDefinition Width="10*" MinWidth="200"/>
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="*" MinWidth="12"/>
             </Grid.ColumnDefinitions>
-            <TextBlock x:Name="korisnik" Text="Korisnicko ime: " Grid.Row="0" Grid.Column="1" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left"/>
-            <TextBox x:Name="korisnikbox" Height="40"  TextChanged="korisnickoime_TextChanged" Grid.Row="0" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Stretch" />
-            <TextBlock x:Name="sifra" Text="Sifra: " Grid.Row="1" Grid.Column="1" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left"/>
-            <TextBox x:Name="sifrabox" Height="40"  TextChanged="sifrabox_TextChanged" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Stretch" />
-            <Button x:Name="zaboravljenasifra" Content="Zaboravljena sifra" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Right" />
-            <TextBlock x:Name="nemanaloga" Text="Jos nemate korisnicki racun? Napravite ga" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" />
-            <Button x:Name="kreirajracun" Content="Kreirajte ga" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" />
-            <Button x:Name="dugmeDalje" Content="Prijavi se"  HorizontalAlignment="Right" Grid.Row="4" Grid.Column="2" VerticalAlignment="Center"/>
-            <Button x:Name="dugmeNazad" Content="Nazad" Click="dugmeNazad_Click" HorizontalAlignment="Left" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center"  />
+
+            <TextBlock x:Name="korisnik" Text="Korisnicko ime: " Grid.Row="1" Grid.Column="1" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            <TextBox x:Name="korisnikbox"  Height="40"  TextChanged="korisnickoime_TextChanged" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Stretch" />
+            <TextBlock x:Name="sifra" Text="Sifra: " Grid.Row="3" Grid.Column="1" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            <PasswordBox x:Name="sifrabox" Height="40" Grid.Row="3" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Stretch" />
+            <Button x:Name="zaboravljenasifra" Height="40"  Content="Zaboravljena sifra" Grid.Row="5" Grid.Column="2" HorizontalAlignment="Right" />
+            <TextBlock x:Name="nemanaloga" Text="Jos nemate korisnicki racun?" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <Button x:Name="kreirajracun" Content="Kreirajte ga" Height="40"  Grid.Row="7" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" Click="kreirajracun_Click" />
+            <Button x:Name="dugmeDalje" Content="Prijavi se" Height="40"  HorizontalAlignment="Right" Grid.Row="9" Grid.Column="2" VerticalAlignment="Center" Click="dugmeDalje_Click"/>
+            <Button x:Name="dugmeNazad" Content="Nazad" Click="dugmeNazad_Click" Height="40" HorizontalAlignment="Left" Grid.Row="9" Grid.Column="1" VerticalAlignment="Center"  />
             
         </Grid>
-        
+
     </Grid>
+
 </Page>

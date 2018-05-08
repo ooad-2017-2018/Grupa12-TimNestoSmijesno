@@ -9,7 +9,7 @@ namespace LanacHotela
     public class Hotel
     {
         private int idHotela;
-        private static int idBrojac = 1000;
+        private static int idBrojac = 1001;
         private string imeHotela;
         private Uposlenik menadzer;
         private int brojZvjezdica;
@@ -21,10 +21,10 @@ namespace LanacHotela
         private string email;
         private List<Usluge> listaUsluga = new List<Usluge>();
 
-        public Hotel(global::System.String i, Uposlenik menadzer, global::System.Int32 brojZvjezdica, List<Soba> listaSoba, List<RezervacijaSmjestaja> listaRezervacija, List<Uposlenik> listaUposlenika, global::System.String lokacija, global::System.String brojTelefona, global::System.String email, List<Usluge> listaUsluga)
+        public Hotel(string ime, Uposlenik menadzer, int brojZvjezdica, List<Soba> listaSoba, List<RezervacijaSmjestaja> listaRezervacija, List<Uposlenik> listaUposlenika, string lokacija, string brojTelefona, string email, List<Usluge> listaUsluga)
         {
-            this.idHotela = idBrojac+1;
-            this.imeHotela = i;
+            this.idHotela = idBrojac;
+            this.imeHotela = ime;
             this.menadzer = menadzer;
             this.brojZvjezdica = brojZvjezdica;
             this.listaSoba = listaSoba;
@@ -36,6 +36,8 @@ namespace LanacHotela
             this.listaUsluga = listaUsluga;
             idBrojac++;
         }
+
+        
 
         public global::System.Int32 IdHotela { get => idHotela; set => idHotela = value; }
         internal Uposlenik Menadzer { get => menadzer; set => menadzer = value; }
@@ -126,6 +128,10 @@ namespace LanacHotela
             }
             
         }
-        
+        public override string ToString()
+        {
+            return string.Format("{0} {1}, {2}",IdHotela,ImeHotela, Menadzer );
+        }
+
     }
 }

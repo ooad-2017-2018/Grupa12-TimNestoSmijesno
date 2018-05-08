@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="LanacHotela.MojiHoteli"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LanacHotela"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock x:Name="imeforme" Text="MojiHoteli" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" SelectionChanged="imeforme_SelectionChanged"/>
+        <Button x:Name="dugmenazad" Content="Nazad" HorizontalAlignment="right" Grid.Row="0" Grid.Column="2" Click="dugmenazad_Click" />
+        <TextBlock x:Name="imelistehotela" Text="Lista Hotela" HorizontalAlignment="Left" VerticalAlignment="Stretch" Grid.Row="1" Grid.Column="1" />
+        <TextBlock x:Name="imelisteuposlenika" Text="Lista uposlenika" HorizontalAlignment="Left" VerticalAlignment="Stretch" Grid.Row="1" Grid.Column="2" />
+        <ListView x:Name="listahotela" HorizontalAlignment="center"  VerticalAlignment="Top" Grid.Row="2" Grid.Column="1">
+        </ListView>
+        <ListView x:Name="listauposlenika" HorizontalAlignment="center"  VerticalAlignment="Top" Grid.Row="2" Grid.Column="2">
+        </ListView>
+        <Button x:Name="osvjezihotele" Content="Osvježi" HorizontalAlignment="Center" Grid.Row="3" Grid.Column="1" Click="osvjezihotele_Click" />
+        <Button x:Name="osvjeziuposlenike" Content="Osvježi" HorizontalAlignment="Center" Grid.Row="3" Grid.Column="2" Click="osvjeziuposlenike_Click" />
+    </Grid>
+</Page>

@@ -42,5 +42,17 @@ namespace LanacHotela
             Page novi = new MainPage();
             this.Content = novi;
         }
+
+        private void kreirajracun_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void dugmeDalje_Click(object sender, RoutedEventArgs e)
+        {
+                Page novi = new AdminForma();
+                this.Content = novi;
+           
+        }
     }
 }
