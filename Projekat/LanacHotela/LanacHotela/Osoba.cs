@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LanacHotela
 {
-    class Osoba
+    public class Osoba
     {
         private string ime;
         private string prezime;

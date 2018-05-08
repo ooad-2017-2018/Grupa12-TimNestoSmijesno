@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LanacHotela
 {
-    class Ocjena
+    public class Ocjena
     {
         private int idOcjene;
         private int ocjenaPostavljena;

@@ -1,6 +1,6 @@
 ﻿namespace LanacHotela
 {
-    class Kartica
+    public class Kartica
     {
         private string idKartice;
         private double stanjeNaKartici;

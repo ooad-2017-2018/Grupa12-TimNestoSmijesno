@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LanacHotela
 {
-    class Soba
+    public class Soba
     {
         private int idSobe;
         private static int idBrojac = 1000;

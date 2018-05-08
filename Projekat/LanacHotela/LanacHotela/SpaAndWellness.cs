@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace LanacHotela
 {
-    class SpaAndWellness:Usluge
+    public class SpaAndWellness:Usluge
     {
         private int kapacitet;
         private string trajanjeUsluge;
@@ -18,7 +18,12 @@ namespace LanacHotela
         public global::System.Int32 Kapacitet { get => kapacitet; set => kapacitet = value; }
         internal Dictionary<GostHotela, global::System.String> RezervacijeDanas { get => rezervacijeDanas; set => rezervacijeDanas = value; }
         internal Dictionary<GostHotela, global::System.String> RezervacijeSutra { get => rezervacijeSutra; set => rezervacijeSutra = value; }
-
+        public SpaAndWellness(global::System.String nazivUsluge, global::System.Double cijena, global::System.String terminiDostupnosti, List<Object> listaSlika, global::System.String radnoVrijeme, Ocjena ocjena, Komentar komentar, global::System.String s, global::System.Int32 c) : base(nazivUsluge, cijena, terminiDostupnosti, listaSlika, radnoVrijeme, ocjena, komentar)
+        {
+            kapacitet = c;
+            trajanjeUsluge = s;
+            
+        }
         public void prebaciNoviDan()
         {
 

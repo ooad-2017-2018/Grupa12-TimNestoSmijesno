@@ -1,13 +1,13 @@
 ﻿namespace LanacHotela
 {
-    class GostHotela:Osoba 
+    public class GostHotela:Osoba 
     {
         private int idGost;
         private static int idBrojac = 1234;
         private string brojLicnailiPasosa;
         private Kartica platnaKartica;
 
-        public GostHotela(System.String ime, System.String prezime, System.String korisnickoIme, System.String sifra, Object slika, System.String jmbg, DateTime datumRodjenja, System.String email, System.String brojTelefona, global::System.String brojLicnailiPasosa, Kartica platnaKartica) : base(ime, prezime, korisnickoIme, sifra, slika, jmbg, datumRodjenja, email, brojTelefona)
+        public GostHotela(System.String ime, System.String prezime, System.String korisnickoIme, System.String sifra, System.Object slika, System.String jmbg, System.DateTime datumRodjenja, System.String email, System.String brojTelefona, global::System.String brojLicnailiPasosa, Kartica platnaKartica) : base(ime, prezime, korisnickoIme, sifra, slika, jmbg, datumRodjenja, email, brojTelefona)
         {
             this.idGost = idBrojac++;
             this.brojLicnailiPasosa = brojLicnailiPasosa;
