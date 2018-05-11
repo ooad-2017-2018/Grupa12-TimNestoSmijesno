@@ -120,6 +120,9 @@
     <Compile Include="MojiHoteli.xaml.cs">
       <DependentUpon>MojiHoteli.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MojiHoteli2.xaml.cs">
+      <DependentUpon>MojiHoteli2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Ocjena.cs" />
     <Compile Include="Osoba.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -176,6 +179,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="MojiHoteli.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MojiHoteli2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
