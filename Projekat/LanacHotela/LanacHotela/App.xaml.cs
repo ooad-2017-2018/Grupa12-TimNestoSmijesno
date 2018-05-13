@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Microsoft.WindowsAzure.MobileServices;
 
 namespace LanacHotela
 {
@@ -31,6 +32,9 @@ namespace LanacHotela
             this.InitializeComponent();
             this.Suspending += OnSuspending;
         }
+
+        public static MobileServiceClient MobileService = new
+MobileServiceClient("https://lanachotela.azurewebsites.net");
 
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points

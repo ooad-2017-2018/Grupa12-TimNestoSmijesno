@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Controls;
 
 namespace LanacHotela
 {
@@ -14,7 +15,7 @@ namespace LanacHotela
         private double cijenaPoNoci;
         private int brojKreveta;
         private bool balkon;
-        private List<Object> listaSlikaSobe;
+        private List<Image> listaSlikaSobe;
         private List<Ocjena> listaOcjena;
         private List<Komentar> listaKomentara;
 
@@ -32,7 +33,7 @@ namespace LanacHotela
         public global::System.Double CijenaPoNoci { get => cijenaPoNoci; set => cijenaPoNoci = value; }
         public global::System.Int32 BrojKreveta { get => brojKreveta; set => brojKreveta = value; }
         public global::System.Boolean Balkon { get => balkon; set => balkon = value; }
-        public List<Object> ListaSlikaSobe { get => listaSlikaSobe; set => listaSlikaSobe = value; }
+        public List<Image> ListaSlikaSobe { get => listaSlikaSobe; set => listaSlikaSobe = value; }
         internal List<Ocjena> ListaOcjena { get => listaOcjena; set => listaOcjena = value; }
         internal List<Komentar> ListaKomentara { get => listaKomentara; set => listaKomentara = value; }
 
@@ -45,7 +46,7 @@ namespace LanacHotela
         {
             ListaOcjena.Add(ocj);
         }
-        public void DodajSliku(Object slika)
+        public void DodajSliku(Image slika)
         {
             ListaSlikaSobe.Add(slika);
         }
