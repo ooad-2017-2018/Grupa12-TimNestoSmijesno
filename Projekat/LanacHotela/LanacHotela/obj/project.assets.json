@@ -11684,24 +11684,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nele_\\.nuget\\packages\\": {},
+    "C:\\Users\\Nur\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nele_\\Desktop\\OOAD PROJEKAT\\Projekat\\LanacHotela\\LanacHotela\\LanacHotela.csproj",
+      "projectUniqueName": "C:\\Users\\Nur\\Desktop\\ooad projekat\\Grupa12-TimNestoSmijesno\\Projekat\\LanacHotela\\LanacHotela\\LanacHotela.csproj",
       "projectName": "LanacHotela",
-      "projectPath": "C:\\Users\\nele_\\Desktop\\OOAD PROJEKAT\\Projekat\\LanacHotela\\LanacHotela\\LanacHotela.csproj",
-      "packagesPath": "C:\\Users\\nele_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nele_\\Desktop\\OOAD PROJEKAT\\Projekat\\LanacHotela\\LanacHotela\\obj\\",
+      "projectPath": "C:\\Users\\Nur\\Desktop\\ooad projekat\\Grupa12-TimNestoSmijesno\\Projekat\\LanacHotela\\LanacHotela\\LanacHotela.csproj",
+      "packagesPath": "C:\\Users\\Nur\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nur\\Desktop\\ooad projekat\\Grupa12-TimNestoSmijesno\\Projekat\\LanacHotela\\LanacHotela\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\nele_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nur\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],

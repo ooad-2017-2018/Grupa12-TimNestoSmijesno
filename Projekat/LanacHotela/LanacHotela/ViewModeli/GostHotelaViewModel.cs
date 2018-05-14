@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Controls;
 
 namespace LanacHotela
 {
@@ -44,6 +45,16 @@ namespace LanacHotela
                 }
             }
             return lista;
+        }
+
+        public void RegistracijaKorisnika(string i, string p, string j, string ki, string s, DateTime dr, string em, string bt, Image sl, string bl, Kartica pk)
+        {
+            foreach(GostHotela g in LanacHotela.ListaKorisnika)
+            {
+                if (g.Jmbg == j) LanacHotela.ListaKorisnika.Remove(g);
+            }
+            GostHotela a = new GostHotela(i, p, ki, s, sl, j, dr, em, bt, bl, pk);
+            LanacHotela.ListaKorisnika.Add(a);
         }
     }
 }

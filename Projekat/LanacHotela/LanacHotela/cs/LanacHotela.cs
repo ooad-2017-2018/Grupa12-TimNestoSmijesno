@@ -43,6 +43,8 @@ namespace LanacHotela
             }
             listaKorisnika.Add(korisnik);
         }
+
+
         public static void DodajHotel(Hotel hotel)
         {
             foreach (Hotel x in listaHotela)
