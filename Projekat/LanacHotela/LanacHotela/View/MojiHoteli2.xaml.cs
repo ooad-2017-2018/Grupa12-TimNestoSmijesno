@@ -48,7 +48,7 @@ namespace LanacHotela
 
         private void dodajkorisnikadugme_Click(object sender, RoutedEventArgs e)
         {
-            Page nova = new DodajKorisnika();
+            Page nova = new RegistracijaKorisnika();
             this.Content = nova;
         }
     }

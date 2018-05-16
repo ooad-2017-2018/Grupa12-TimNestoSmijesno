@@ -181,5 +181,10 @@ namespace LanacHotela
 
             await greskaDialog.ShowAsync();
         }
+
+        private void dugmeunesi_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

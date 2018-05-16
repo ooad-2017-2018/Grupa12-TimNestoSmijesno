@@ -181,7 +181,7 @@ namespace LanacHotela.LanacHotela_XamlTypeInfo
         private void InitTypeTables()
         {
             _typeNameTable = new string[10];
-            _typeNameTable[0] = "LanacHotela.DodajKorisnika";
+            _typeNameTable[0] = "LanacHotela.RegistracijaKorisnika";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "LanacHotela.AdminForma";
@@ -193,7 +193,7 @@ namespace LanacHotela.LanacHotela_XamlTypeInfo
             _typeNameTable[9] = "FilePicker.Scenario1";
 
             _typeTable = new global::System.Type[10];
-            _typeTable[0] = typeof(global::LanacHotela.DodajKorisnika);
+            _typeTable[0] = typeof(global::LanacHotela.RegistracijaKorisnika);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::LanacHotela.AdminForma);
@@ -237,7 +237,7 @@ namespace LanacHotela.LanacHotela_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_DodajKorisnika() { return new global::LanacHotela.DodajKorisnika(); }
+        private object Activate_0_RegistracijaKorisnika() { return new global::LanacHotela.RegistracijaKorisnika(); }
         private object Activate_3_AdminForma() { return new global::LanacHotela.AdminForma(); }
         private object Activate_4_DodajUposlenika() { return new global::LanacHotela.DodajUposlenika(); }
         private object Activate_5_BlankPage1() { return new global::LanacHotela.BlankPage1(); }
@@ -256,9 +256,9 @@ namespace LanacHotela.LanacHotela_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  LanacHotela.DodajKorisnika
+            case 0:   //  LanacHotela.RegistracijaKorisnika
                 userType = new global::LanacHotela.LanacHotela_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_DodajKorisnika;
+                userType.Activator = Activate_0_RegistracijaKorisnika;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

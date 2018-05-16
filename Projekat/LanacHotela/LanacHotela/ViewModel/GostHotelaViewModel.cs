@@ -47,7 +47,7 @@ namespace LanacHotela
             return lista;
         }
 
-        public void RegistracijaKorisnika(string i, string p, string j, string ki, string s, DateTime dr, string em, string bt, Image sl, string bl, Kartica pk)
+        public void RegistracijaKorisnika(string i, string p, string j, string ki, string s, DateTime dr, string em, string bt, Image sl, string bl, string pk)
         {
             foreach(GostHotela g in LanacHotela.ListaKorisnika)
             {

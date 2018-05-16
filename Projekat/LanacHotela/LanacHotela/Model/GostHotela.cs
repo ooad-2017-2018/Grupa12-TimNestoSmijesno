@@ -15,11 +15,12 @@ namespace LanacHotela
         private Kartica platnaKartica;
 
         public GostHotela(string ime, string prezime, string korisnickoIme, string sifra, Image slika, string jmbg, DateTime datumRodjenja, 
-                          string email, string brojTelefona, string brojLicnailiPasosa, Kartica platnaKartica) : base(ime, prezime, korisnickoIme, sifra, slika, jmbg, datumRodjenja, email, brojTelefona)
+                          string email, string brojTelefona, string brojLicnailiPasosa, string platnaKartica) : base(ime, prezime, korisnickoIme, sifra, slika, jmbg, datumRodjenja, email, brojTelefona)
         {
             this.IdGost = idBrojac++;
             this.brojLicnailiPasosa = brojLicnailiPasosa;
-            this.platnaKartica = platnaKartica;
+            Kartica kartica = new Kartica(platnaKartica, 1600);
+            this.PlatnaKartica = kartica;
         }
 
         public global::System.String BrojLicnailiPasosa { get => brojLicnailiPasosa; set => brojLicnailiPasosa = value; }

@@ -92,10 +92,10 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="DodajKorisnika.xaml.cs">
-      <DependentUpon>DodajKorisnika.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Model\Admin.cs" />
+    <Compile Include="RegistracijaKorisnika.xaml.cs">
+      <DependentUpon>RegistracijaKorisnika.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\AdminViewModel.cs" />
     <Compile Include="ViewModel\GostHotelaViewModel.cs" />
     <Compile Include="ViewModel\SobaViewModel.cs" />
@@ -165,7 +165,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="DodajKorisnika.xaml">
+    <Page Include="RegistracijaKorisnika.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
