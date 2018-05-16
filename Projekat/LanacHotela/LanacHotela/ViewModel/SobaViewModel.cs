@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Controls;
 
 namespace LanacHotela
 {
@@ -14,9 +15,9 @@ namespace LanacHotela
             return l;
         }
 
-        public List<Object> PregledSlika(Soba s)
+        public List<Image> PregledSlika(Soba s)
         {
-            List<Object> l = s.ListaSlikaSobe;
+            List<Image> l = s.ListaSlikaSobe;
             return l;
         }
 

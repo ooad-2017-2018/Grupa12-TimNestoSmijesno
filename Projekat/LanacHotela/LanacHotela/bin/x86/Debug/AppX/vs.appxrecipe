@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>ca5205d7-449e-4097-9e97-e635cfb0fd32</PackageIdentityName>
     <PackageIdentityPublisher>CN=nele_</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\nele_\Desktop\Projekat moj dio\LanacHotela\LanacHotela\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\nele_\Desktop\Projekat moj dio\LanacHotela\LanacHotela\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>00EED5E581E46E05622539AF81A41B8E2AA63B48B55DD3C6F7475854DCDA2270</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>ca5205d7-449e-4097-9e97-e635cfb0fd32_1.0.0.0_x86__fqm6qn5cxqsq4</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>ca5205d7-449e-4097-9e97-e635cfb0fd32_fqm6qn5cxqsq4!App</RegisteredUserModeAppID>
@@ -28,16 +28,24 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\nele_\Desktop\Projekat moj dio\LanacHotela\LanacHotela\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-08T20:36:22.667</Modified>
+      <Modified>2018-05-16T00:02:18.875</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\Projekat moj dio\LanacHotela\LanacHotela\bin\x86\Debug\LanacHotela.exe">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\LanacHotela.exe">
       <PackagePath>entrypoint\LanacHotela.exe</PackagePath>
-      <Modified>2018-05-08T20:36:21.069</Modified>
+      <Modified>2018-05-16T00:02:14.591</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nele_\.nuget\packages\microsoft.azure.mobile.client\4.0.2\lib\uap10.0\Microsoft.Azure.Mobile.Client.dll">
+      <PackagePath>Microsoft.Azure.Mobile.Client.dll</PackagePath>
+      <Modified>2017-10-11T15:23:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nele_\.nuget\packages\newtonsoft.json\9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2016-06-13T21:06:14.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\nele_\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.0.8\runtimes\win10-x86\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
@@ -695,72 +703,72 @@
       <PackagePath>netstandard.dll</PackagePath>
       <Modified>2018-02-23T14:22:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\Projekat moj dio\LanacHotela\LanacHotela\Assets\hotel1.jpg">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\Assets\hotel1.jpg">
       <PackagePath>Assets\hotel1.jpg</PackagePath>
       <Modified>2018-04-05T16:57:02.566</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\Projekat moj dio\LanacHotela\LanacHotela\Assets\hotel2.jpg">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\Assets\hotel2.jpg">
       <PackagePath>Assets\hotel2.jpg</PackagePath>
       <Modified>2018-04-04T22:44:33.797</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\Projekat moj dio\LanacHotela\LanacHotela\Assets\hotel3.jpg">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\Assets\hotel3.jpg">
       <PackagePath>Assets\hotel3.jpg</PackagePath>
       <Modified>2018-04-04T22:44:42.024</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\Projekat moj dio\LanacHotela\LanacHotela\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2018-04-04T20:15:26.284</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\Projekat moj dio\LanacHotela\LanacHotela\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2017-12-13T19:32:48.571</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\Projekat moj dio\LanacHotela\LanacHotela\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-12-13T19:32:48.571</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\Projekat moj dio\LanacHotela\LanacHotela\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-12-13T19:32:48.571</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\Projekat moj dio\LanacHotela\LanacHotela\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-12-13T19:32:48.571</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\Projekat moj dio\LanacHotela\LanacHotela\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-12-13T19:32:48.571</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\Projekat moj dio\LanacHotela\LanacHotela\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-12-13T19:32:48.571</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\Projekat moj dio\LanacHotela\LanacHotela\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-12-13T19:32:48.571</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\Projekat moj dio\LanacHotela\LanacHotela\bin\x86\Debug\LanacHotela.xr.xml">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\LanacHotela.xr.xml">
       <PackagePath>LanacHotela.xr.xml</PackagePath>
-      <Modified>2018-05-08T20:36:20.650</Modified>
+      <Modified>2018-05-16T00:02:14.060</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-11-10T16:15:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\Projekat moj dio\LanacHotela\LanacHotela\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-08T20:36:22.098</Modified>
+      <Modified>2018-05-16T00:02:18.016</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\Projekat moj dio\LanacHotela\LanacHotela\bin\x86\Debug\Core\LanacHotela.exe">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\Core\LanacHotela.exe">
       <PackagePath>LanacHotela.exe</PackagePath>
-      <Modified>2018-05-08T20:36:22.655</Modified>
+      <Modified>2018-05-16T00:02:18.860</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

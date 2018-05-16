@@ -92,51 +92,51 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="cs\Admin.cs" />
-    <Compile Include="Forme\AdminForma.xaml.cs">
+    <Compile Include="Model\Admin.cs" />
+    <Compile Include="ViewModel\AdminViewModel.cs" />
+    <Compile Include="ViewModel\GostHotelaViewModel.cs" />
+    <Compile Include="ViewModel\SobaViewModel.cs" />
+    <Compile Include="ViewModel\UslugeViewModel.cs" />
+    <Compile Include="View\AdminForma.xaml.cs">
       <DependentUpon>AdminForma.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModeli\AdminViewModel.cs" />
-    <Compile Include="xaml\App.xaml.cs">
+    <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="xaml\DodajUposlenika.xaml.cs">
+    <Compile Include="View\DodajUposlenika.xaml.cs">
       <DependentUpon>DodajUposlenika.xaml</DependentUpon>
     </Compile>
-    <Compile Include="cs\GostHotela.cs" />
-    <Compile Include="ViewModeli\GostHotelaViewModel.cs" />
-    <Compile Include="cs\Hotel.cs" />
-    <Compile Include="cs\ImageUtils.cs" />
-    <Compile Include="cs\Kartica.cs" />
-    <Compile Include="cs\Komentar.cs" />
-    <Compile Include="cs\Kontejnerska.cs" />
-    <Compile Include="cs\LanacHotela.cs" />
-    <Compile Include="xaml\LogIn.xaml.cs">
+    <Compile Include="Model\GostHotela.cs" />
+    <Compile Include="Model\Hotel.cs" />
+    <Compile Include="Model\ImageUtils.cs" />
+    <Compile Include="Model\Kartica.cs" />
+    <Compile Include="Model\Komentar.cs" />
+    <Compile Include="Model\Kontejnerska.cs" />
+    <Compile Include="Model\LanacHotela.cs" />
+    <Compile Include="View\LogIn.xaml.cs">
       <DependentUpon>LogIn.xaml</DependentUpon>
     </Compile>
-    <Compile Include="xaml\MainPage.xaml.cs">
+    <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="xaml\MojiHoteli.xaml.cs">
+    <Compile Include="View\MojiHoteli.xaml.cs">
       <DependentUpon>MojiHoteli.xaml</DependentUpon>
     </Compile>
-    <Compile Include="xaml\MojiHoteli2.xaml.cs">
+    <Compile Include="View\MojiHoteli2.xaml.cs">
       <DependentUpon>MojiHoteli2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="cs\Ocjena.cs" />
-    <Compile Include="cs\Osoba.cs" />
+    <Compile Include="Model\Ocjena.cs" />
+    <Compile Include="Model\Osoba.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="cs\Restoran.cs" />
-    <Compile Include="cs\RezervacijaSmjestaja.cs" />
-    <Compile Include="xaml\Scenario1.xaml.cs">
+    <Compile Include="Model\Restoran.cs" />
+    <Compile Include="Model\RezervacijaSmjestaja.cs" />
+    <Compile Include="View\Scenario1.xaml.cs">
       <DependentUpon>Scenario1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="cs\Soba.cs" />
-    <Compile Include="ViewModeli\SobaViewModel.cs" />
-    <Compile Include="cs\SpaAndWellness.cs" />
-    <Compile Include="cs\Uposlenik.cs" />
-    <Compile Include="cs\Usluge.cs" />
-    <Compile Include="ViewModeli\UslugeViewModel.cs" />
+    <Compile Include="Model\Soba.cs" />
+    <Compile Include="Model\SpaAndWellness.cs" />
+    <Compile Include="Model\Uposlenik.cs" />
+    <Compile Include="Model\Usluge.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -158,35 +158,35 @@
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="xaml\App.xaml">
+    <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Forme\AdminForma.xaml">
+    <Page Include="View\AdminForma.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="xaml\DodajUposlenika.xaml">
+    <Page Include="View\DodajUposlenika.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="xaml\LogIn.xaml">
+    <Page Include="View\LogIn.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="xaml\MainPage.xaml">
+    <Page Include="View\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="xaml\MojiHoteli.xaml">
+    <Page Include="View\MojiHoteli.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="xaml\MojiHoteli2.xaml">
+    <Page Include="View\MojiHoteli2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="xaml\Scenario1.xaml">
+    <Page Include="View\Scenario1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

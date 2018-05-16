@@ -1,7 +1,8 @@
-AdminForma.xbf
 App.xbf
-DodajUposlenika.xbf
-LogIn.xbf
-MainPage.xbf
-MojiHoteli.xbf
-Scenario1.xbf
+View\AdminForma.xbf
+View\DodajUposlenika.xbf
+View\LogIn.xbf
+View\MainPage.xbf
+View\MojiHoteli.xbf
+View\MojiHoteli2.xbf
+View\Scenario1.xbf

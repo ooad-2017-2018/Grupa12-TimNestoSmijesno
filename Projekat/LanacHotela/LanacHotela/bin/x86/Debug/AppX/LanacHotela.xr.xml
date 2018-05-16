@@ -118,6 +118,7 @@
     <RootType FullName="LanacHotela.BlankPage1" />
     <RootType FullName="LanacHotela.MainPage" />
     <RootType FullName="LanacHotela.MojiHoteli" />
+    <RootType FullName="LanacHotela.MojiHoteli2" />
     <RootType FullName="FilePicker.Scenario1" />
   </Roots.RootTypes>
 </Roots>
