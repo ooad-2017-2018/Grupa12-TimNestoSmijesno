@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Controls;
 
 
 namespace LanacHotela
@@ -14,13 +15,13 @@ namespace LanacHotela
         private string nazivUsluge;
         private double cijena;
         private string terminiDostupnosti;
-        private List<Object> listaSlika;
+        private List<Image> listaSlika;
         private string radnoVrijeme;
         private Ocjena ocjena;
         private Komentar komentar;
         private List<string> listaKomentara;
 
-        public Usluge(global::System.String nazivUsluge, global::System.Double cijena, global::System.String terminiDostupnosti, List<Object> listaSlika, global::System.String radnoVrijeme, Ocjena ocjena, Komentar komentar)
+        public Usluge(global::System.String nazivUsluge, global::System.Double cijena, global::System.String terminiDostupnosti, List<Image> listaSlika, global::System.String radnoVrijeme, Ocjena ocjena, Komentar komentar)
         {
             this.idUsluge = idBrojac + 1;
             this.nazivUsluge = nazivUsluge;
@@ -40,7 +41,7 @@ namespace LanacHotela
         public global::System.String RadnoVrijeme { get => radnoVrijeme; set => radnoVrijeme = value; }
         internal Ocjena Ocjena { get => ocjena; set => ocjena = value; }
         internal Komentar Komentar { get => komentar; set => komentar = value; }
-        public List<object> ListaSlika { get => listaSlika; set => listaSlika = value; }
+        public List<Image> ListaSlika { get => listaSlika; set => listaSlika = value; }
         public List<string> ListaKomentara { get => listaKomentara; set => listaKomentara = value; }
 
         public void DodajKomentar(Komentar noviKomentar)

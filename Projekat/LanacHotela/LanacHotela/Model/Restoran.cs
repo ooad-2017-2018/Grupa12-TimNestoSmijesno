@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Controls;
 
 namespace LanacHotela
 {
@@ -15,7 +16,7 @@ namespace LanacHotela
         public global::System.Int32 Kapacitet { get => kapacitet; set => kapacitet = value; }
         internal Dictionary<GostHotela, global::System.String> RezervacijeDanas { get => rezervacijeDanas; set => rezervacijeDanas = value; }
         internal Dictionary<GostHotela, global::System.String> RezervacijeSutra { get => rezervacijeSutra; set => rezervacijeSutra = value; }
-        public Restoran(global::System.String nazivUsluge, global::System.Double cijena, global::System.String terminiDostupnosti, List<Object> listaSlika, global::System.String radnoVrijeme, Ocjena ocjena, Komentar komentar, global::System.Int32 c) : base(nazivUsluge, cijena, terminiDostupnosti, listaSlika, radnoVrijeme, ocjena, komentar)
+        public Restoran(global::System.String nazivUsluge, global::System.Double cijena, global::System.String terminiDostupnosti, List<Image> listaSlika, global::System.String radnoVrijeme, Ocjena ocjena, Komentar komentar, global::System.Int32 c) : base(nazivUsluge, cijena, terminiDostupnosti, listaSlika, radnoVrijeme, ocjena, komentar)
         {
             kapacitet = c;
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Controls;
 
 namespace LanacHotela
 {
@@ -12,9 +13,9 @@ namespace LanacHotela
         {
             return h.ListaUsluga;
         }
-        public List<Object> PregledSlika(Usluge u)
+        public List<Image> PregledSlika(Usluge u)
         {
-            List<Object> lista = u.ListaSlika;
+            List<Image> lista = u.ListaSlika;
             return lista;
         }
         public List<string> PregledKomentara(Usluge u)

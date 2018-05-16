@@ -17,15 +17,13 @@ namespace LanacHotela
         public GostHotela(string ime, string prezime, string korisnickoIme, string sifra, Image slika, string jmbg, DateTime datumRodjenja, 
                           string email, string brojTelefona, string brojLicnailiPasosa, Kartica platnaKartica) : base(ime, prezime, korisnickoIme, sifra, slika, jmbg, datumRodjenja, email, brojTelefona)
         {
-            this.idGost = idBrojac++;
+            this.IdGost = idBrojac++;
             this.brojLicnailiPasosa = brojLicnailiPasosa;
             this.platnaKartica = platnaKartica;
-            idBrojac++;
         }
 
-        public global::System.Int32 IdGost { get => idGost; set => idGost = value; }
         public global::System.String BrojLicnailiPasosa { get => brojLicnailiPasosa; set => brojLicnailiPasosa = value; }
         internal Kartica PlatnaKartica { get => platnaKartica; set => platnaKartica = value; }
-
+        public int IdGost { get => idGost; set => idGost = value; }
     }
 }

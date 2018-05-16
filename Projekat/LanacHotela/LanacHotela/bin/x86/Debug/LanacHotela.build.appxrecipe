@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>ca5205d7-449e-4097-9e97-e635cfb0fd32</PackageIdentityName>
     <PackageIdentityPublisher>CN=nele_</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\nele_\Desktop\ddd\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\nele_\Desktop\ddd\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\nele_\Desktop\ddd\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\LanacHotela.exe">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\ddd\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\LanacHotela.exe">
       <PackagePath>entrypoint\LanacHotela.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\nele_\.nuget\packages\microsoft.azure.mobile.client\4.0.2\lib\uap10.0\Microsoft.Azure.Mobile.Client.dll">
@@ -526,56 +526,56 @@
     <AppxPackagedFile Include="C:\Users\nele_\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.0.8\runtimes\win10-x86\lib\uap10.0.15138\netstandard.dll">
       <PackagePath>netstandard.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\Assets\hotel1.jpg">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\ddd\Projekat\LanacHotela\LanacHotela\Assets\hotel1.jpg">
       <PackagePath>Assets\hotel1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\Assets\hotel2.jpg">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\ddd\Projekat\LanacHotela\LanacHotela\Assets\hotel2.jpg">
       <PackagePath>Assets\hotel2.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\Assets\hotel3.jpg">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\ddd\Projekat\LanacHotela\LanacHotela\Assets\hotel3.jpg">
       <PackagePath>Assets\hotel3.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\ddd\Projekat\LanacHotela\LanacHotela\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\ddd\Projekat\LanacHotela\LanacHotela\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\ddd\Projekat\LanacHotela\LanacHotela\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\ddd\Projekat\LanacHotela\LanacHotela\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\ddd\Projekat\LanacHotela\LanacHotela\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\ddd\Projekat\LanacHotela\LanacHotela\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\ddd\Projekat\LanacHotela\LanacHotela\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\ddd\Projekat\LanacHotela\LanacHotela\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\LanacHotela.xr.xml">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\ddd\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\LanacHotela.xr.xml">
       <PackagePath>LanacHotela.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\ddd\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\Core\LanacHotela.exe">
+    <AppxPackagedFile Include="C:\Users\nele_\Desktop\ddd\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\Core\LanacHotela.exe">
       <PackagePath>LanacHotela.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
