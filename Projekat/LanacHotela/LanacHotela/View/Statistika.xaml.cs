@@ -39,7 +39,7 @@ namespace LanacHotela
 
         private void dugmenazad_Click(object sender, RoutedEventArgs e)
         {
-            Page nova = new AdminForma();
+            Page nova = new MojiHoteli2();
             this.Content = nova;
 
         }

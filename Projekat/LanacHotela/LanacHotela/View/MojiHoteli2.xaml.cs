@@ -26,5 +26,30 @@ namespace LanacHotela
         {
             this.InitializeComponent();
         }
+
+        private void dugmenazad_Click(object sender, RoutedEventArgs e)
+        {
+            Page nova = new AdminForma();
+            this.Content = nova;
+
+        }
+
+        private void statistikadugme_Click(object sender, RoutedEventArgs e)
+        {
+            Page nova = new MojiHoteli();
+            this.Content = nova;
+        }
+
+        private void dudajuposlenikadugme_Click(object sender, RoutedEventArgs e)
+        {
+            Page nova = new DodajUposlenika();
+            this.Content = nova;
+        }
+
+        private void dodajkorisnikadugme_Click(object sender, RoutedEventArgs e)
+        {
+            Page nova = new DodajKorisnika();
+            this.Content = nova;
+        }
     }
 }

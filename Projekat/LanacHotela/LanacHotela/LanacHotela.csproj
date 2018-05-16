@@ -92,6 +92,9 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DodajKorisnika.xaml.cs">
+      <DependentUpon>DodajKorisnika.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Model\Admin.cs" />
     <Compile Include="ViewModel\AdminViewModel.cs" />
     <Compile Include="ViewModel\GostHotelaViewModel.cs" />
@@ -119,8 +122,8 @@
     <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\MojiHoteli.xaml.cs">
-      <DependentUpon>MojiHoteli.xaml</DependentUpon>
+    <Compile Include="View\Statistika.xaml.cs">
+      <DependentUpon>Statistika.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MojiHoteli2.xaml.cs">
       <DependentUpon>MojiHoteli2.xaml</DependentUpon>
@@ -162,6 +165,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="DodajKorisnika.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\AdminForma.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -178,7 +185,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="View\MojiHoteli.xaml">
+    <Page Include="View\Statistika.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

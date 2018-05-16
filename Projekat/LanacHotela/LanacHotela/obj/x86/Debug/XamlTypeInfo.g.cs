@@ -180,27 +180,29 @@ namespace LanacHotela.LanacHotela_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[9];
-            _typeNameTable[0] = "LanacHotela.AdminForma";
+            _typeNameTable = new string[10];
+            _typeNameTable[0] = "LanacHotela.DodajKorisnika";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "LanacHotela.DodajUposlenika";
-            _typeNameTable[4] = "LanacHotela.BlankPage1";
-            _typeNameTable[5] = "LanacHotela.MainPage";
-            _typeNameTable[6] = "LanacHotela.MojiHoteli";
-            _typeNameTable[7] = "LanacHotela.MojiHoteli2";
-            _typeNameTable[8] = "FilePicker.Scenario1";
+            _typeNameTable[3] = "LanacHotela.AdminForma";
+            _typeNameTable[4] = "LanacHotela.DodajUposlenika";
+            _typeNameTable[5] = "LanacHotela.BlankPage1";
+            _typeNameTable[6] = "LanacHotela.MainPage";
+            _typeNameTable[7] = "LanacHotela.MojiHoteli";
+            _typeNameTable[8] = "LanacHotela.MojiHoteli2";
+            _typeNameTable[9] = "FilePicker.Scenario1";
 
-            _typeTable = new global::System.Type[9];
-            _typeTable[0] = typeof(global::LanacHotela.AdminForma);
+            _typeTable = new global::System.Type[10];
+            _typeTable[0] = typeof(global::LanacHotela.DodajKorisnika);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::LanacHotela.DodajUposlenika);
-            _typeTable[4] = typeof(global::LanacHotela.BlankPage1);
-            _typeTable[5] = typeof(global::LanacHotela.MainPage);
-            _typeTable[6] = typeof(global::LanacHotela.MojiHoteli);
-            _typeTable[7] = typeof(global::LanacHotela.MojiHoteli2);
-            _typeTable[8] = typeof(global::FilePicker.Scenario1);
+            _typeTable[3] = typeof(global::LanacHotela.AdminForma);
+            _typeTable[4] = typeof(global::LanacHotela.DodajUposlenika);
+            _typeTable[5] = typeof(global::LanacHotela.BlankPage1);
+            _typeTable[6] = typeof(global::LanacHotela.MainPage);
+            _typeTable[7] = typeof(global::LanacHotela.MojiHoteli);
+            _typeTable[8] = typeof(global::LanacHotela.MojiHoteli2);
+            _typeTable[9] = typeof(global::FilePicker.Scenario1);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -235,13 +237,14 @@ namespace LanacHotela.LanacHotela_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_AdminForma() { return new global::LanacHotela.AdminForma(); }
-        private object Activate_3_DodajUposlenika() { return new global::LanacHotela.DodajUposlenika(); }
-        private object Activate_4_BlankPage1() { return new global::LanacHotela.BlankPage1(); }
-        private object Activate_5_MainPage() { return new global::LanacHotela.MainPage(); }
-        private object Activate_6_MojiHoteli() { return new global::LanacHotela.MojiHoteli(); }
-        private object Activate_7_MojiHoteli2() { return new global::LanacHotela.MojiHoteli2(); }
-        private object Activate_8_Scenario1() { return new global::FilePicker.Scenario1(); }
+        private object Activate_0_DodajKorisnika() { return new global::LanacHotela.DodajKorisnika(); }
+        private object Activate_3_AdminForma() { return new global::LanacHotela.AdminForma(); }
+        private object Activate_4_DodajUposlenika() { return new global::LanacHotela.DodajUposlenika(); }
+        private object Activate_5_BlankPage1() { return new global::LanacHotela.BlankPage1(); }
+        private object Activate_6_MainPage() { return new global::LanacHotela.MainPage(); }
+        private object Activate_7_MojiHoteli() { return new global::LanacHotela.MojiHoteli(); }
+        private object Activate_8_MojiHoteli2() { return new global::LanacHotela.MojiHoteli2(); }
+        private object Activate_9_Scenario1() { return new global::FilePicker.Scenario1(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -253,9 +256,9 @@ namespace LanacHotela.LanacHotela_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  LanacHotela.AdminForma
+            case 0:   //  LanacHotela.DodajKorisnika
                 userType = new global::LanacHotela.LanacHotela_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_AdminForma;
+                userType.Activator = Activate_0_DodajKorisnika;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -268,44 +271,51 @@ namespace LanacHotela.LanacHotela_XamlTypeInfo
                 xamlType = new global::LanacHotela.LanacHotela_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  LanacHotela.DodajUposlenika
+            case 3:   //  LanacHotela.AdminForma
                 userType = new global::LanacHotela.LanacHotela_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_DodajUposlenika;
+                userType.Activator = Activate_3_AdminForma;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  LanacHotela.BlankPage1
+            case 4:   //  LanacHotela.DodajUposlenika
                 userType = new global::LanacHotela.LanacHotela_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_BlankPage1;
+                userType.Activator = Activate_4_DodajUposlenika;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  LanacHotela.MainPage
+            case 5:   //  LanacHotela.BlankPage1
                 userType = new global::LanacHotela.LanacHotela_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_MainPage;
+                userType.Activator = Activate_5_BlankPage1;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 6:   //  LanacHotela.MojiHoteli
+            case 6:   //  LanacHotela.MainPage
                 userType = new global::LanacHotela.LanacHotela_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_MojiHoteli;
+                userType.Activator = Activate_6_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  LanacHotela.MojiHoteli2
+            case 7:   //  LanacHotela.MojiHoteli
                 userType = new global::LanacHotela.LanacHotela_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_7_MojiHoteli2;
+                userType.Activator = Activate_7_MojiHoteli;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 8:   //  FilePicker.Scenario1
+            case 8:   //  LanacHotela.MojiHoteli2
                 userType = new global::LanacHotela.LanacHotela_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_Scenario1;
+                userType.Activator = Activate_8_MojiHoteli2;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 9:   //  FilePicker.Scenario1
+                userType = new global::LanacHotela.LanacHotela_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_9_Scenario1;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

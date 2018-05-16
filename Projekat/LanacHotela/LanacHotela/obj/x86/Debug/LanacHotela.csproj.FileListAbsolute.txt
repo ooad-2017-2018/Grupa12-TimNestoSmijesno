@@ -799,8 +799,6 @@ C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\De
 C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\View\LogIn.g.cs
 C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\View\MainPage.g.i.cs
 C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\View\MainPage.g.cs
-C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\View\MojiHoteli.g.i.cs
-C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\View\MojiHoteli.g.cs
 C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\View\MojiHoteli2.g.i.cs
 C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\View\MojiHoteli2.g.cs
 C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\View\Scenario1.g.i.cs
@@ -810,7 +808,6 @@ C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\De
 C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\View\DodajUposlenika.xaml
 C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\View\LogIn.xaml
 C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\View\MainPage.xaml
-C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\View\MojiHoteli.xaml
 C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\View\MojiHoteli2.xaml
 C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\View\Scenario1.xaml
 C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\App.xbf
@@ -818,7 +815,6 @@ C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\De
 C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\View\DodajUposlenika.xbf
 C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\View\LogIn.xbf
 C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\View\MainPage.xbf
-C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\View\MojiHoteli.xbf
 C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\View\MojiHoteli2.xbf
 C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\View\Scenario1.xbf
 C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\LanacHotela.exe
@@ -828,7 +824,6 @@ C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\De
 C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\View\DodajUposlenika.xbf
 C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\View\LogIn.xbf
 C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\View\MainPage.xbf
-C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\View\MojiHoteli.xbf
 C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\View\MojiHoteli2.xbf
 C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\View\Scenario1.xbf
 C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\LanacHotela.xr.xml
@@ -1022,3 +1017,13 @@ C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\De
 C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\Microsoft.Azure.Mobile.Client.pri.xml
 C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\DodajKorisnika.g.i.cs
+C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\DodajKorisnika.g.cs
+C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\View\Statistika.g.i.cs
+C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\View\Statistika.g.cs
+C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\DodajKorisnika.xaml
+C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\View\Statistika.xaml
+C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\DodajKorisnika.xbf
+C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\obj\x86\Debug\View\Statistika.xbf
+C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\DodajKorisnika.xbf
+C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\View\Statistika.xbf

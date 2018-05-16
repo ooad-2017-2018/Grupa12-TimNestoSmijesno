@@ -29,7 +29,7 @@ namespace LanacHotela
 
         private void mojihoteli_Click(object sender, RoutedEventArgs e)
         {
-            Page nova = new MojiHoteli();
+            Page nova = new MojiHoteli2();
             this.Content = nova;
 
         }
@@ -58,10 +58,6 @@ namespace LanacHotela
 
         }
 
-        private void dodajuposlenika_Click(object sender, RoutedEventArgs e)
-        {
-            Page novi = new DodajUposlenika();
-            this.Content = novi;
-        }
+        
     }
 }

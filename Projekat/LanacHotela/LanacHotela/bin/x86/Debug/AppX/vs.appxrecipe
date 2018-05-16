@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-16T12:35:43.064</Modified>
+      <Modified>2018-05-16T12:58:18.796</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\LanacHotela.exe">
       <PackagePath>entrypoint\LanacHotela.exe</PackagePath>
-      <Modified>2018-05-16T12:35:41.993</Modified>
+      <Modified>2018-05-16T12:58:17.731</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\nele_\.nuget\packages\microsoft.azure.mobile.client\4.0.2\lib\uap10.0\Microsoft.Azure.Mobile.Client.dll">
       <PackagePath>Microsoft.Azure.Mobile.Client.dll</PackagePath>
@@ -755,7 +755,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\LanacHotela.xr.xml">
       <PackagePath>LanacHotela.xr.xml</PackagePath>
-      <Modified>2018-05-16T00:02:14.060</Modified>
+      <Modified>2018-05-16T12:54:50.198</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -764,11 +764,11 @@
     <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-16T12:35:42.616</Modified>
+      <Modified>2018-05-16T12:58:18.369</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\Core\LanacHotela.exe">
       <PackagePath>LanacHotela.exe</PackagePath>
-      <Modified>2018-05-16T12:35:43.055</Modified>
+      <Modified>2018-05-16T12:58:18.787</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
