@@ -179,7 +179,7 @@
         <DatePicker x:Name="datumrodjenjabox" Grid.Row="12" Grid.Column="2"   Height="35"/>
         
         <TextBlock x:Name="email" Text="E-mail: " Grid.Row="14" Grid.Column="1" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left"/>
-        <TextBox x:Name="emailbox" Grid.Row="14" Grid.Column="2"  Height="35"/>
+            <TextBox x:Name="emailbox" Grid.Row="14" Grid.Column="2"  Height="35"/>
         
         <TextBlock x:Name="brojtelefona" Text="Broj telefona: " Grid.Row="16" Grid.Column="1" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left"/>
         <TextBox x:Name="brojtelefonabox" Grid.Row="16" Grid.Column="2" Height="35"/>

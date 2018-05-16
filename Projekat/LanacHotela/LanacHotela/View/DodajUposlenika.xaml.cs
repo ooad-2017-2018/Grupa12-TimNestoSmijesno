@@ -17,7 +17,9 @@ using Windows.Storage.Pickers;
 using Windows.Storage;
 using Windows.UI.Xaml.Media.Imaging;
 using System.Text;
+using System.Text.RegularExpressions;
 using Windows.Storage.Streams;
+using System.Net.Mail;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -99,28 +101,68 @@ namespace LanacHotela
 
         private  void dugmeunesi_Click(object sender, RoutedEventArgs e)
         {
-            //saljemo podatke modelview koji ih sprema
-            DateTimeOffset vrijeme = datumrodjenjabox.Date;
-            DateTime trazeno = vrijeme.DateTime;
-            Uposlenik u = new Uposlenik(imebox.Text, prezimebox.Text, korisnickoimebox.Text, sifrabox.Password, slikabox, jmbgbox.Text,
-                                            trazeno, emailbox.Text, brojtelefonabox.Text,
-                                            Convert.ToInt32(platabox.Text), DateTime.Today, (1000 + radnomjestobox.SelectedIndex),
-                                            Convert.ToString(pozicijabox.SelectedItem));
+            Regex regexEmail = new Regex(@"^[_]*([a-z0-9]+(\.|_*)?)+@([a-z][a-z0-9-]+(\.|-*\.))+[a-z]{2,6}$");
+            Regex regexImePrezime = new Regex("^[a-zA-ZČčĆćŽžŠšĐđ]{2,15}$");
+            Regex regexBrojMobitela = new Regex("^[0-9]{9,15}$");
+            Regex regexKorisnickoIme = new Regex("^[0-9a-zA-Z]{5,15}");
+            Regex regexSifra = new Regex("^[0-9a-zA-ZČčĆćŽžŠšĐđ]{8,15}");
+            Regex regexPlata = new Regex("^[0-9]{3,4}$");
+            Regex regexJMBG = new Regex("^[0-9]{13}$");
 
-            AdminViewModel.DodajUposlenika(u);
-            
-            //brisemo podatke iz boxova da ih spremimo za unos novih podataka
-            imebox.Text = "";
-            prezimebox.Text = "";
-            jmbgbox.Text = "";
-            korisnickoimebox.Text = "";
-            sifrabox.Password = "";
-            emailbox.Text = "";
-            brojtelefonabox.Text = "";
-            radnomjestobox.SelectedItem = radnomjestobox.Items[0];
-            pozicijabox.SelectedItem = pozicijabox.Items[0];
-            platabox.Text = "";
-            nazivslike.Text = "";
+            if (!regexImePrezime.IsMatch(imebox.Text) || !regexImePrezime.IsMatch(prezimebox.Text))
+            {
+                GreskaDialog("Ime i prezime ne mogu sadržavati znakove osim slova!");
+            }
+            else if (!regexJMBG.IsMatch(jmbgbox.Text))
+            {
+                GreskaDialog("Neispravan JMBG! JMBG sadrži 13 brojeva");
+            }
+            else if (!regexKorisnickoIme.IsMatch(korisnickoimebox.Text))
+            {
+                GreskaDialog("Korisničko ime je prekratko ili sadrži nedozvoljene znakove!");
+            }
+            else if (!regexSifra.IsMatch(sifrabox.Password))
+            {
+                GreskaDialog("Nedozvoljena šifra. Unesite šifru dužine 8-15 znakova!");
+            }
+            else if (!regexEmail.IsMatch(emailbox.Text))
+            {
+                GreskaDialog("Neispravan email");
+            }
+            else if (!regexBrojMobitela.IsMatch(brojtelefonabox.Text))
+            {
+                GreskaDialog("Neispravan format broja telefona. Unesite samo brojeve");
+            }
+            else if (!regexPlata.IsMatch(platabox.Text))
+            {
+                GreskaDialog("Nedozvoljen unos u polje plata. Molimo unesite ispravan iznos!");
+            }
+            else
+            {
+                //saljemo podatke modelview koji ih sprema
+                DateTimeOffset vrijeme = datumrodjenjabox.Date;
+                DateTime trazeno = vrijeme.DateTime;
+                Uposlenik u = new Uposlenik(imebox.Text, prezimebox.Text, korisnickoimebox.Text, sifrabox.Password, slikabox, jmbgbox.Text,
+                                                trazeno, emailbox.Text, brojtelefonabox.Text,
+                                                Convert.ToInt32(platabox.Text), DateTime.Today, (1000 + radnomjestobox.SelectedIndex),
+                                                Convert.ToString(pozicijabox.SelectedItem));
+
+                AdminViewModel.DodajUposlenika(u);
+
+                //brisemo podatke iz boxova da ih spremimo za unos novih podataka
+                imebox.Text = "";
+                prezimebox.Text = "";
+                jmbgbox.Text = "";
+                korisnickoimebox.Text = "";
+                sifrabox.Password = "";
+                emailbox.Text = "";
+                brojtelefonabox.Text = "";
+                radnomjestobox.SelectedItem = radnomjestobox.Items[0];
+                pozicijabox.SelectedItem = pozicijabox.Items[0];
+                platabox.Text = "";
+                nazivslike.Text = "";
+            }
+           
         }
 
         private void dugmenazad_Click(object sender, RoutedEventArgs e)
@@ -128,6 +170,16 @@ namespace LanacHotela
             Page novi = new AdminForma();
             this.Content = novi;
         }
-        
+        private async void GreskaDialog(string s)
+        {
+            ContentDialog greskaDialog = new ContentDialog()
+            {
+                Title = "Greska",
+                Content = s,
+                CloseButtonText = "Ok"
+            };
+
+            await greskaDialog.ShowAsync();
+        }
     }
 }
