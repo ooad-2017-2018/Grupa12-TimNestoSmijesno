@@ -49,7 +49,7 @@ namespace LanacHotela
         {
             foreach (Hotel x in listaHotela)
             {
-                if (x.IdHotela == hotel.IdHotela) throw new Exception("Već postoji ta rezervacija za ovog korisnika");
+                if (x.id == hotel.id) throw new Exception("Već postoji ta rezervacija za ovog korisnika");
 
             }
             listaHotela.Add(hotel);

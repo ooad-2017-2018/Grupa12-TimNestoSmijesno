@@ -8,7 +8,6 @@ namespace LanacHotela
 {
     public class Hotel
     {
-        private int idHotela;
         private static int idBrojac = 1001;
         private string imeHotela;
         private Uposlenik menadzer;
@@ -23,7 +22,7 @@ namespace LanacHotela
 
         public Hotel(string ime, Uposlenik menadzer, int brojZvjezdica, List<Soba> listaSoba, List<RezervacijaSmjestaja> listaRezervacija, List<Uposlenik> listaUposlenika, string lokacija, string brojTelefona, string email, List<Usluge> listaUsluga)
         {
-            this.idHotela = idBrojac;
+
             this.imeHotela = ime;
             this.menadzer = menadzer;
             this.brojZvjezdica = brojZvjezdica;
@@ -39,7 +38,7 @@ namespace LanacHotela
 
         
 
-        public global::System.Int32 IdHotela { get => idHotela; set => idHotela = value; }
+        public string id { get; set; }
         internal Uposlenik Menadzer { get => menadzer; set => menadzer = value; }
         public global::System.Int32 BrojZvjezdica { get => brojZvjezdica; set => brojZvjezdica = value; }
         internal List<Soba> ListaSoba { get => listaSoba; set => listaSoba = value; }
@@ -56,7 +55,7 @@ namespace LanacHotela
         {
             foreach (RezervacijaSmjestaja x in listaRezervacija)
             {
-                if (x.IdRezervacije== novaRezervacija.IdRezervacije) throw new Exception("Već postoji ta rezervacija za ovog korisnika");
+                if (x.id== novaRezervacija.id) throw new Exception("Već postoji ta rezervacija za ovog korisnika");
 
             }
 
@@ -68,7 +67,7 @@ namespace LanacHotela
         {
             foreach (Uposlenik x in listaUposlenika)
             {
-                if (x.IdUposlenika == zUposlenik.IdUposlenika) throw new Exception("Već postoji ovaj uposlenik");
+                if (x.id == zUposlenik.id) throw new Exception("Već postoji ovaj uposlenik");
 
             }
             listaUposlenika.Add(zUposlenik);
@@ -78,7 +77,7 @@ namespace LanacHotela
         {
             foreach (Usluge x in listaUsluga)
             {
-                if (x.IdUsluge== zUsluge.IdUsluge) throw new Exception("Već postoji ta usluga za ovaj hotel");
+                if (x.id== zUsluge.id) throw new Exception("Već postoji ta usluga za ovaj hotel");
 
             }
             listaUsluga.Add(zUsluge);
@@ -88,7 +87,7 @@ namespace LanacHotela
         {
             foreach (Soba x in listaSoba)
             {
-                if (x.IdSobe == zSoba.IdSobe) throw new Exception("Već postoji ta soba za ovaj hotel");
+                if (x.id == zSoba.id) throw new Exception("Već postoji ta soba za ovaj hotel");
 
             }
             listaSoba.Add(zSoba);
@@ -97,7 +96,7 @@ namespace LanacHotela
         {
             foreach (RezervacijaSmjestaja x in listaRezervacija)
             {
-                if (x.IdRezervacije == novaRezervacija.IdRezervacije) listaRezervacija.Remove(x);
+                if (x.id == novaRezervacija.id) listaRezervacija.Remove(x);
 
             }
         }
@@ -106,7 +105,7 @@ namespace LanacHotela
         {
             foreach (Uposlenik x in listaUposlenika)
             {
-                if (x.IdUposlenika == zUposlenik.IdUposlenika) listaUposlenika.Remove(x);
+                if (x.id == zUposlenik.id) listaUposlenika.Remove(x);
 
             }
         }
@@ -115,7 +114,7 @@ namespace LanacHotela
         {
             foreach (Usluge x in listaUsluga)
             {
-                if (x.IdUsluge == zUsluge.IdUsluge) listaUsluga.Remove(x);
+                if (x.id == zUsluge.id) listaUsluga.Remove(x);
             }
         }
 
@@ -123,14 +122,14 @@ namespace LanacHotela
         {
             foreach (Soba x in listaSoba)
             {
-                if (x.IdSobe == zSoba.IdSobe) listaSoba.Remove(x);
+                if (x.id == zSoba.id) listaSoba.Remove(x);
 
             }
             
         }
         public override string ToString()
         {
-            return string.Format("{0} {1}, {2}",IdHotela,ImeHotela, Menadzer );
+            return string.Format("{0} {1}, {2}",id,ImeHotela, Menadzer );
         }
 
     }

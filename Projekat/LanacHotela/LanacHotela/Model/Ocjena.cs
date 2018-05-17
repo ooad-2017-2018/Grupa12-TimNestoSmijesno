@@ -8,18 +8,18 @@ namespace LanacHotela
 {
     public class Ocjena
     {
-        private int idOcjene;
+        public string id { get; set; }
         private int ocjenaPostavljena;
         GostHotela korisnikOcijenio;
 
         public Ocjena(global::System.Int32 idOcjene, global::System.Int32 ocjenaPostavljena, GostHotela korisnikOcijenio)
         {
-            this.idOcjene = idOcjene;
+
             this.ocjenaPostavljena = ocjenaPostavljena;
             this.korisnikOcijenio = korisnikOcijenio;
         }
 
-        public global::System.Int32 IdOcjene { get => idOcjene; set => idOcjene = value; }
+
         public global::System.Int32 OcjenaPostavljena { get => ocjenaPostavljena; set => ocjenaPostavljena = value; }
         internal GostHotela KorisnikOcijenio { get => korisnikOcijenio; set => korisnikOcijenio = value; }
     }

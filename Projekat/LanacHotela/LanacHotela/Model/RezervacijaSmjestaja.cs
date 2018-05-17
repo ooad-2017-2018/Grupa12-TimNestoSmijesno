@@ -8,7 +8,7 @@ namespace LanacHotela
 {
     public class RezervacijaSmjestaja
     {
-        private int idRezervacije;
+        public string id { get; set; }
         private static int idBrojac = 1000;
         DateTime danDolaska;
         private int brojDanaOstanka;
@@ -21,7 +21,6 @@ namespace LanacHotela
 
         public RezervacijaSmjestaja(global::System.Int32 idRezervacije, DateTime danDolaska, global::System.Int32 brojDanaOstanka, Hotel hotel, GostHotela korisnik, Soba soba, global::System.Boolean validnaRezervacija, global::System.String razlogOtkazivanja, global::System.Double cijenaOstanka)
         {
-            this.idRezervacije = idBrojac++;
             this.danDolaska = danDolaska;
             this.brojDanaOstanka = brojDanaOstanka;
             this.hotel = hotel;
@@ -33,7 +32,6 @@ namespace LanacHotela
             idBrojac++;
         }
 
-        public global::System.Int32 IdRezervacije { get => idRezervacije; set => idRezervacije = value; }
         public DateTime DanDolaska { get => danDolaska; set => danDolaska = value; }
         public global::System.Boolean ValidnaRezervacija { get => validnaRezervacija; set => validnaRezervacija = value; }
         public global::System.String RazlogOtkazivanja { get => razlogOtkazivanja; set => razlogOtkazivanja = value; }

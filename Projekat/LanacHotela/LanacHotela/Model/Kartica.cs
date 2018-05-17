@@ -11,7 +11,7 @@
             this.stanjeNaKartici = stanjeNaKartici;
 
         }
-
+        public string id { get; set; }
         public global::System.String IdKartice { get => idKartice; set => idKartice = value; }
         public global::System.Double StanjeNaKartici { get => stanjeNaKartici; set => stanjeNaKartici = value; }
     }

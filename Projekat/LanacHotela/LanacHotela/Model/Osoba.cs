@@ -40,7 +40,7 @@ namespace LanacHotela
         public string Jmbg { get => jmbg; set => jmbg = value; }
         public string Email { get => email; set => email = value; }
         public string BrojTelefona { get => brojTelefona; set => brojTelefona = value; }
-
+        public string id { get; set; }
         public override string ToString()
         {
             return string.Format("{0} {1}", Ime, Prezime);

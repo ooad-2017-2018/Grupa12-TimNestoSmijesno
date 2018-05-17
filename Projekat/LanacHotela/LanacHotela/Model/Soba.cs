@@ -9,7 +9,7 @@ namespace LanacHotela
 {
     public class Soba
     {
-        private int idSobe;
+        public string id { get; set; }
         private static int idBrojac = 1000;
         Hotel hotelSobe;
         private double cijenaPoNoci;
@@ -21,7 +21,7 @@ namespace LanacHotela
 
         public Soba(Hotel hotelSobe, global::System.Double cijenaPoNoci, global::System.Int32 brojKreveta, global::System.Boolean balkon)
         {
-            this.idSobe = idBrojac++;
+
             this.hotelSobe = hotelSobe;
             this.cijenaPoNoci = cijenaPoNoci;
             this.brojKreveta = brojKreveta;
@@ -29,7 +29,7 @@ namespace LanacHotela
             idBrojac++;
         }
 
-        public global::System.Int32 IdSobe { get => idSobe; set => idSobe = value; }
+
         public global::System.Double CijenaPoNoci { get => cijenaPoNoci; set => cijenaPoNoci = value; }
         public global::System.Int32 BrojKreveta { get => brojKreveta; set => brojKreveta = value; }
         public global::System.Boolean Balkon { get => balkon; set => balkon = value; }
@@ -55,7 +55,7 @@ namespace LanacHotela
             
             foreach(RezervacijaSmjestaja x in hotelSobe.ListaRezervacija)
             {
-                if (x.Soba.IdSobe == idSobe)
+                if (x.Soba.id == id)
                 {
                     if (DateTime.Compare(x.DanDolaska, dDolaska) <= 0 && DateTime.Compare(x.DanDolaska.AddDays(x.BrojDanaOstanka), dDolaska) >= 0) return false;
                     else if (DateTime.Compare(x.DanDolaska, dDolaska) >= 0 && DateTime.Compare(x.DanDolaska.AddDays(x.BrojDanaOstanka), dDolaska) <= 0) return false;

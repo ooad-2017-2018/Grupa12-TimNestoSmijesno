@@ -20,6 +20,8 @@ using System.Text;
 using System.Text.RegularExpressions;
 using Windows.Storage.Streams;
 using System.Net.Mail;
+using Microsoft.WindowsAzure.MobileServices;
+using Windows.UI.Popups;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -98,7 +100,7 @@ namespace LanacHotela
         {
             filePicker();
         }
-
+        IMobileServiceTable<Uposlenik> userTableObj = App.MobileService.GetTable<Uposlenik>();
         private  void dugmeunesi_Click(object sender, RoutedEventArgs e)
         {
             Regex regexEmail = new Regex(@"^[_]*([a-z0-9]+(\.|_*)?)+@([a-z][a-z0-9-]+(\.|-*\.))+[a-z]{2,6}$");
@@ -144,11 +146,11 @@ namespace LanacHotela
                 DateTime trazeno = vrijeme.DateTime;
                 Uposlenik u = new Uposlenik(imebox.Text, prezimebox.Text, korisnickoimebox.Text, sifrabox.Password, slikabox, jmbgbox.Text,
                                                 trazeno, emailbox.Text, brojtelefonabox.Text,
-                                                Convert.ToInt32(platabox.Text), DateTime.Today, (1000 + radnomjestobox.SelectedIndex),
+                                                Convert.ToInt32(platabox.Text), DateTime.Today, "(1000 + radnomjestobox.SelectedIndex)",
                                                 Convert.ToString(pozicijabox.SelectedItem));
 
                 AdminViewModel.DodajUposlenika(u);
-
+                userTableObj.InsertAsync(u);
                 //brisemo podatke iz boxova da ih spremimo za unos novih podataka
                 imebox.Text = "";
                 prezimebox.Text = "";

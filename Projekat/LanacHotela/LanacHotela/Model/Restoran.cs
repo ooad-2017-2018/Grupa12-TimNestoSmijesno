@@ -25,5 +25,6 @@ namespace LanacHotela
         {
 
         }
+        public string id { get; set; }
     }
 }

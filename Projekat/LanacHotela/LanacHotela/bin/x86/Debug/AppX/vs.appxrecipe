@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-16T13:43:58.000</Modified>
+      <Modified>2018-05-17T10:18:45.134</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\LanacHotela.exe">
       <PackagePath>entrypoint\LanacHotela.exe</PackagePath>
-      <Modified>2018-05-16T13:43:56.855</Modified>
+      <Modified>2018-05-17T10:18:43.151</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\nele_\.nuget\packages\microsoft.azure.mobile.client\4.0.2\lib\uap10.0\Microsoft.Azure.Mobile.Client.dll">
       <PackagePath>Microsoft.Azure.Mobile.Client.dll</PackagePath>
@@ -764,11 +764,11 @@
     <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-16T13:43:57.536</Modified>
+      <Modified>2018-05-17T10:18:44.361</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\nele_\Desktop\OOAD PROJEKAT\Projekat\LanacHotela\LanacHotela\bin\x86\Debug\Core\LanacHotela.exe">
       <PackagePath>LanacHotela.exe</PackagePath>
-      <Modified>2018-05-16T13:43:57.993</Modified>
+      <Modified>2018-05-17T10:18:45.120</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

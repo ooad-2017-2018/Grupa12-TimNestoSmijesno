@@ -10,7 +10,7 @@ namespace LanacHotela
 {
     public class Usluge
     {
-        private int idUsluge;
+        public string id { get; set; }
         private static int idBrojac = 100;
         private string nazivUsluge;
         private double cijena;
@@ -23,7 +23,7 @@ namespace LanacHotela
 
         public Usluge(global::System.String nazivUsluge, global::System.Double cijena, global::System.String terminiDostupnosti, List<Image> listaSlika, global::System.String radnoVrijeme, Ocjena ocjena, Komentar komentar)
         {
-            this.idUsluge = idBrojac + 1;
+
             this.nazivUsluge = nazivUsluge;
             this.cijena = cijena;
             this.terminiDostupnosti = terminiDostupnosti;
@@ -34,7 +34,7 @@ namespace LanacHotela
             idBrojac++;
         }
 
-        public global::System.Int32 IdUsluge { get => idUsluge; set => idUsluge = value; }
+
         public global::System.String NazivUsluge { get => nazivUsluge; set => nazivUsluge = value; }
         public global::System.String TerminiDostupnosti { get => terminiDostupnosti; set => terminiDostupnosti = value; }
         public global::System.Double Cijena { get => cijena; set => cijena = value; }

@@ -10,11 +10,11 @@ namespace LanacHotela
     public static class AdminViewModel
     {
         public static void DodajUposlenika (string ime, string prezime, string korisnickoIme, string sifra, Image slika, string jmbg, DateTime datumRodjenja,
-                                     string email, string brojTelefona, int plata, DateTime datumZaposlenja,  int idHotela, string pozicija)
+                                     string email, string brojTelefona, int plata, DateTime datumZaposlenja,  string id, string pozicija)
         {
             Uposlenik u = new Uposlenik(ime, prezime, korisnickoIme, sifra, slika, jmbg, datumRodjenja, email, brojTelefona, plata,
-                datumZaposlenja, idHotela, pozicija);
-            foreach(Hotel h in LanacHotela.ListaHotela) if(idHotela==h.IdHotela)
+                datumZaposlenja, id, pozicija);
+            foreach(Hotel h in LanacHotela.ListaHotela) if(id==h.id)
                 {
                     h.ListaUposlenika.Add(u);
                 }
@@ -45,7 +45,7 @@ namespace LanacHotela
         {
             foreach(Hotel h in LanacHotela.ListaHotela)
             {
-                if (u.IdHotela == h.IdHotela)
+                if (u.id == h.id)
                 {
                     foreach(Uposlenik p in h.ListaUposlenika)
                     {
@@ -85,7 +85,7 @@ namespace LanacHotela
             Hotel h = new Hotel(i, menadzer, brojZvjezdica, listaSoba, listaRezervacija, listaUposlenika, lokacija, brojTelefona, email, listaUsluga);
             foreach (Hotel x in LanacHotela.ListaHotela)
             {
-                if (x.IdHotela == h.IdHotela) throw new Exception("Već postoji ta rezervacija za ovog korisnika");
+                if (x.id == h.id) throw new Exception("Već postoji ta rezervacija za ovog korisnika");
 
             }
             LanacHotela.ListaHotela.Add(h);
