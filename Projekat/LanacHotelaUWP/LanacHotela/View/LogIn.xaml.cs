@@ -50,9 +50,28 @@ namespace LanacHotela
 
         private void dugmeDalje_Click(object sender, RoutedEventArgs e)
         {
+            if (korisnikbox.Text == "mmahmutovic1" && sifrabox.Password == "nedimjelijep")
+            {
                 Page novi = new AdminForma();
                 this.Content = novi;
+            }
+            else
+            {
+                GreskaDialog("Pogresna kombinacija korisnickog imena i sifre!");
+            }
            
         }
+        private async void GreskaDialog(string s)
+        {
+            ContentDialog greskaDialog = new ContentDialog()
+            {
+                Title = "Greska",
+                Content = s,
+                CloseButtonText = "Ok"
+            };
+
+            await greskaDialog.ShowAsync();
+        }
+
     }
 }
