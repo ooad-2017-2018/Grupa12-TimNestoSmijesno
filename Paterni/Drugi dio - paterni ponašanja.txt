@@ -1,0 +1,20 @@
+Observer Pattern:
+Ukoliko dode do promjene stanja objekta, svi objekti koji imaju pristup promijenjenim stavkama za taj objekat moraju biti 
+obaviješteni te biti u mogucnosti vidjeti tu promjenu. Uloga Observer paterna je da uspostavi relaciju izmedu objekata tako kada jedan objekat promijeni stanje, drugi zainteresirani objekti se obavještavaju.
+Obicno se koristi na nacin da se u objekat doda metoda notify, koja ažurira Observer klasu. 
+observer pattern nije iskorišten u našem projektu ali bi dobro mjesto za njegovu upotrebu moglo biti obavještavanje o promjeni dostupnosti sobe
+
+Strategy patern 
+on izdvaja algoritam iz maticne klase i ukljucuje ga u posebne klase. 
+Pogodan je kada postoje razliciti primjenjivi algoritmi (strategije) za neki problem.  
+Strategy patern omogucava klijentu izbor jednog od algoritma iz familije algoritama za korištenje.  
+U našoj aplikaciji bi se strategy pattern mogao koristiti kada bi htjeli da implementiramo više razlicitih algoritama za validaciju u zavisnosti od 
+tipa podataka koji koji se verificira 
+
+State Pattern
+Mijenja nacin ponašanja objekata na osnovu trenutnog stanja. 
+Strategy patern izdvaja algoritam iz maticne klase i ukljucuje ga u posebne klase. 
+Pogodan je kada postoje razliciti primjenjivi algoritmi (strategije) za neki problem.  
+Strategy patern omogucava  klijentu izbor jednog od algoritma iz familije algoritama za korištenje.
+Unašem projektu state pattern se mogao koristiti da razdvoji razlicita stanja: kada je admin logovan, kada je drugi uposlenik hotela
+i kada je gost hotela logovan. U svakom od tih slucajeva dobar dio aplikacije bi trebao izgledati drugacije
