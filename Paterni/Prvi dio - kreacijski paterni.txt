@@ -1,0 +1,71 @@
+Kreacijski paterni
+Kreacijski paterni su svi vezani za instanciranje klasa. 
+Oni su odgovorni za efikasne mehanizme stvaranja objekata koji poveæavaju fleksibilnost i ponovnu upotrebu koda.
+Ovi paterni mogu biti jos podijeljeni na:
+-kreacijski paterni objekata
+-kreacijski paterni klasa
+Kreacijski paterni propagiraju dizajn sistema kojim se odvaja korištenje objekata od
+njihovog kreiranja. 
+U grupu kreacijskih paterna se ubrajaju paterni: Singleton, Prototype, Factory Method,
+Abstract Factory i Builder.
+
+Factory method
+Factory method je kreacijski patern koji pruža interfejs za kreiranje objekata u superklasama, 
+ali dopušta da podklase mijenjaju vrstu objekata koji æe se kreirati.
+Uloga Factory Method paterna je da omoguæi kreiranje objekata na naèin da podklase odluèe
+koju klasu instancirati. Razlièite podklase mogu na razlièite naèine implementirati interfejs.
+Factory Method instancira odgovarajuæu podklasu(izvedenu klasu) preko posebne metode na
+osnovu informacije od strane klijenta ili na osnovu tekuæeg stanja.
+Factory patterne (method/abstract) koristimo kad želimo napraviti da nam je kreiranje instanci
+objekata modularno i da jednostavno možemo dodavati nove tipove klasa koje želimo kreirati. 
+Problem:
+Zamislimo da kreiramo neku aplikaciju i da je prva verzija aplikacije podržavala samo npr. jedan vid prevoza.
+Nakon nekog vremena, zelimo dodati i druga transportna sredstva. Veæina koda nam je prilagoðena tom prvom transportnom sredstvu.
+I svaka implementacija novog transporta bi zahtijevala ponovno mijenjanje poèetnog koda.
+Rješenje:
+Factory method patern predlaže da se zamjeni direktna kreacija objekata (sa new operatorom) sa pozivom posebne "factory" metode.
+Poziv konstruktora bi trebao biti premješten unutar te metode. 
+Objekti vraæeni od strane factory metode su èesto nazvani produkti.
+Sada možemo override factory metodu u podklasi i mijenjati klasu objekta koji æe biti kreiran.
+Konkretno ovaj patern smo unutar našeg projekta mogli koristiti za klasu usluge i klase nasljeðene iz nje.
+
+Singleton
+Singleton je kreacijski patern koji osigurava da neka klasa ima samo jednu instancu i osigurava globalan pristup toj instanci.
+Postoji više objekata koje je potrebno samo jednom
+instancirati i nad kojim je potrebna jedinstvena kontrola pristupa. Neki od njih su: thread
+pools (skupina niti), objekti koji upravljaju setovanjem registara, objekti koji se koriste za
+logiranje, objekti koji se koriste kao drajveri za razne ureðaje kao što su printeri i grafièke
+kartice. Instanciranje više nego jednom navedenih objekata mogu se prouzrokovati problemi
+kao što su nekorektno ponašanje programa, neadekvantno korištenje resursa ili
+nekonzistentan rezultat.
+ Patern je sastavljen od jedne klase-Singleton klasa. 
+Klasa sadrži mehanizam za jedinstveno instanciranje same sebe. Unutar klase je
+private static varijabla (uniqueInstance) koja èuva jednu/jedinstvenu instancu klase,
+static metoda (getInstance) preko koje se pristupa Singleton klasi. Važan dio Singleton
+paterna je inicijalizacija resursa u Singleton konstruktoru. 
+Sve implementacije singletona imaju 2 zajednièka koraka:
+-defaultni konstruktor proglasiti privatnim
+-kreiranje statièke kreacijske metode koja æe se ponašati kao konstruktor. 
+	Ova metoda kreira objekat korištenjem privatnog konstruktora i spašava ga u statièkoj varijabli. Svi naredni pozivi ove metode vraæaju skriveni objekat.
+U našem projektu ovaj patern nije nigdje iskorišten ali je mogao biti. 
+Ovaj patern smo mogli iskoristiti u klasi LanacHotela jer nam je potrebna samo jedna instanca te klase.
+Mi jesmo instancirali samo jedan objekat te klase ali nemamo nikakav mehanizam koji bi onemoguæio stvaranja tj instanciranje još objekata.
+
+Builder
+Builder je kreacijski dizajn partern koji nam omoguæava kreiranje razlièitih tipova i reprezentacija nekog objekta koristeæi isti proces kreiranja.
+Builder omoguæava kreiranje kompleksnih objekata korak po korak.
+Problem:
+Zamislimo neki kompleksni objekat koji zahtjeva napornu - korak po korak inicijalizaciju mnogo atribukata.
+Inace se takvi kodovi guraju u konstruktor koji ima mnogo parametara.
+Cak æe neki parametri biti neiskorišteni veèinu vremena. 
+Rješenje:
+Builder patern sugerira ekstraktovanje kod konstrukcije objekta izvan njegove vlastite klase i premještanje i posebne objekte koji se zovu builders.
+Patern organizira konstrukciju objekta u skupove koraka. Za kreiranje nekog objekta, trebat æemo pozvati
+odreðen broj building korak unutar builder klase. 
+Bitna stvar jeste da ne moramo pozvati sve korake.
+Uloga Builder paterna je odvajanje specifikacije kompleksnih objekata od njihove stvarne
+konstrukcije. Isti konstrukcijski proces može kreirati razlièite reprezentacije. 
+U našem projektu se ovaj patern mogao iskoristiti za kreiranje objekata tipa Hotel.
+Hotel ne mora imati bazen, parking itd, 
+Ne mora ni imati direktora ili uposlenika kada se isti tek kreira, ti podaci se mogu naknadno postaviti. Ako vlasnik lanca hotela želi imati uvid u tek 
+napravljen hotel, koji još nije u funkciji ali jeste konstruisan, ti podaci nisu neophodni, èak ih je i nemoguæe postaviti u tom trenutku.
