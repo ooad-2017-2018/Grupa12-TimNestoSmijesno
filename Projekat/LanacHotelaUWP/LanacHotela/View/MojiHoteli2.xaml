@@ -31,7 +31,7 @@
                 <ColumnDefinition Width="4*"/>
                 <ColumnDefinition Width="1*"/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="dugmenazad" Content="Nazad" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Stretch" Click="dugmenazad_Click"/>
+            <Button x:Name="dugmenazad" Content="Nazad" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Click="dugmenazad_Click"/>
             <Button x:Name="statistikadugme" Content="Statistika" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Stretch" Click="statistikadugme_Click" />
             <Button x:Name="dudajuposlenikadugme" Content="Dodaj uposlenika" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Stretch" Click="dudajuposlenikadugme_Click" />
             <Button x:Name="dodajkorisnikadugme" Content="Dodaj korisnika" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Stretch" Click="dodajkorisnikadugme_Click" />

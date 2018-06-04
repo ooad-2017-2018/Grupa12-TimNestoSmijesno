@@ -106,9 +106,9 @@
 
 
         <FlipView x:Name="listaslika" Grid.Column="1" Grid.ColumnSpan="5" Grid.Row="2" Grid.RowSpan="2">
-            <Image Source="LanacHotela/Assets/hotel1.jpg"/>
-            <Image Source="LanacHotela/Assets/hotel2.jpg"/>
-            <Image Source="LanacHotela/Assets/hotel3.jpg"/>
+            <Image Source="Assets/hotel1.jpg"/>
+            <Image Source="Assets/hotel2.jpg"/>
+            <Image Source="Assets/hotel3.jpg"/>
         </FlipView>
 
 

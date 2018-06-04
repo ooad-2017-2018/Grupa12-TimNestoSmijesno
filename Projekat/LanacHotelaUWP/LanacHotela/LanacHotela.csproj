@@ -159,6 +159,16 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="View\Assets\hotel1.jpg" />
+    <Content Include="View\Assets\hotel2.jpg" />
+    <Content Include="View\Assets\hotel3.jpg" />
+    <Content Include="View\Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="View\Assets\SplashScreen.scale-200.png" />
+    <Content Include="View\Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="View\Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="View\Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="View\Assets\StoreLogo.png" />
+    <Content Include="View\Assets\Wide310x150Logo.scale-200.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
