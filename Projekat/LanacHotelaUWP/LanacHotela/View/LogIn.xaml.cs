@@ -17,11 +17,14 @@ using Windows.UI.Xaml.Navigation;
 
 namespace LanacHotela
 {
+
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     public sealed partial class BlankPage1 : Page
     {
+        public static Admin admin = new Admin("Admin", "Admin", "admin", "admin", null, "01", new DateTime(1970, 1, 1), "aadmin1@etf.unsa.ba", "000111222333", 9999, DateTime.Today, "Admin");
+
         public BlankPage1()
         {
             this.InitializeComponent();
@@ -50,7 +53,8 @@ namespace LanacHotela
 
         private void dugmeDalje_Click(object sender, RoutedEventArgs e)
         {
-            if (korisnikbox.Text == "mmahmutovic1" && sifrabox.Password == "nedimjelijep")
+            if (korisnikbox.Text == admin.KorisnickoIme  && sifrabox.Password == admin.Sifra) //iako je ovo loš način provjere
+                                                                                              //sad koristimo ovo zbog jednostavnosti
             {
                 Page novi = new AdminForma();
                 this.Content = novi;

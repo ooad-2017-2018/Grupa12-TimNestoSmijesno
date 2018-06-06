@@ -9,12 +9,13 @@ namespace LanacHotela
 {
     public class Admin : Uposlenik
     {
-
         public Admin(string ime, string prezime, string korisnickoIme, string sifra, 
-            Image slika, string jmbg, DateTime datumRodjenja, string email, string brojTelefona, 
-            int plata, DateTime datumZaposlenja,  string pozicija) : base(ime, prezime, korisnickoIme, sifra, slika, jmbg, datumRodjenja, email, brojTelefona, plata, datumZaposlenja, "0", pozicija)
+                     Image slika, string jmbg, DateTime datumRodjenja, string email,
+                     string brojTelefona, int plata, DateTime datumZaposlenja,  
+                     string pozicija) : base(ime, prezime, korisnickoIme, sifra,
+                     slika, jmbg, datumRodjenja, email, brojTelefona, plata, 
+                     datumZaposlenja, "0", pozicija)
         {
         }
-        
     }
 }

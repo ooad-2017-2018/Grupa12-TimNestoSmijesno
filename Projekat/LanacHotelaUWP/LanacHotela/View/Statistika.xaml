@@ -31,7 +31,10 @@
         </ListView>
         <ListView x:Name="listauposlenika" HorizontalAlignment="center"  VerticalAlignment="Top" Grid.Row="2" Grid.Column="2">
         </ListView>
-        <Button x:Name="osvjezihotele" Content="Osvježi" HorizontalAlignment="Center" Grid.Row="3" Grid.Column="1" Click="osvjezihotele_Click" />
-        <Button x:Name="osvjeziuposlenike" Content="Osvježi" HorizontalAlignment="Center" Grid.Row="3" Grid.Column="2" Click="osvjeziuposlenike_Click" />
+        <Button x:Name="osvjezihotele" Content="Osvježi" HorizontalAlignment="left" Grid.Row="3" Grid.Column="1" Click="osvjezihotele_Click" />
+        <Button x:Name="osvjeziuposlenike" Content="Osvježi" HorizontalAlignment="left" Grid.Row="3" Grid.Column="2" Click="osvjeziuposlenike_Click" Margin="20,20,0,20" />
+        <Button x:Name="printhotele" Content="Printaj" HorizontalAlignment="right" Grid.Row="3" Grid.Column="1" Click="printhotele_Click" Margin="0,20,20,20" />
+        <Button x:Name="printuposlenike" Content="Printaj" HorizontalAlignment="Right" Grid.Row="3" Grid.Column="2" Click="printuposlenike_Click" />
+
     </Grid>
 </Page>

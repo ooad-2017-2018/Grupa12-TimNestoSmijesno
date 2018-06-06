@@ -30,11 +30,13 @@ namespace LanacHotela
             this.pozicija = pozicija;
             idBrojac++;
         }
+       
         
 
 
         public global::System.Int32 Plata { get => plata; set => plata = value; }
         public string IdHotela { get => idHotela; set => idHotela = value; }
         public global::System.String Pozicija { get => pozicija; set => pozicija = value; }
+
     }
 }
