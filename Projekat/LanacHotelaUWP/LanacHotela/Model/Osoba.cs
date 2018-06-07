@@ -9,15 +9,15 @@ namespace LanacHotela
 {
     public class Osoba
     {
-        private string ime;
-        private string prezime;
-        private string korisnickoIme;
-        private string sifra;
-        public Image slika;
-        private string jmbg;
-        public DateTime datumRodjenja;
-        private string email;
-        private string brojTelefona;
+        public string ime { get; set; }
+        public string prezime { get; set; }
+        public string korisnickoIme { get; set; }
+        public string sifra { get; set; }
+        public Image slika { get; set; }
+        public string jmbg { get; set; }
+        public DateTime datumRodjenja { get; set; }
+        public string email { get; set; }
+        public string brojTelefona { get; set; }
 
         public Osoba(string ime, string prezime, string korisnickoIme,string sifra, Image slika, string jmbg, DateTime datumRodjenja, 
                      string email, string brojTelefona)
@@ -32,18 +32,14 @@ namespace LanacHotela
             this.email = email;
             this.brojTelefona = brojTelefona;
         }
+        public Osoba()
+        {
 
-        public string Ime { get => ime; set => ime = value; }
-        public string Prezime { get => prezime; set => prezime = value; }
-        public string KorisnickoIme { get => korisnickoIme; set => korisnickoIme = value; }
-        public string Sifra { get => sifra; set => sifra = value; }
-        public string Jmbg { get => jmbg; set => jmbg = value; }
-        public string Email { get => email; set => email = value; }
-        public string BrojTelefona { get => brojTelefona; set => brojTelefona = value; }
-        public string id { get; set; }
+        }
+        
         public override string ToString()
         {
-            return string.Format("{0} {1}", Ime, Prezime);
+            return string.Format("{0} {1}", ime, prezime);
 
         }
     }

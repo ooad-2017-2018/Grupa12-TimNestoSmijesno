@@ -20,6 +20,7 @@ namespace LanacHotela
         private Ocjena ocjena;
         private Komentar komentar;
         private List<string> listaKomentara;
+        private string HotelId; //u kojem hotelu se nalazi usluga
 
         public Usluge(global::System.String nazivUsluge, global::System.Double cijena, global::System.String terminiDostupnosti, List<Image> listaSlika, global::System.String radnoVrijeme, Ocjena ocjena, Komentar komentar)
         {

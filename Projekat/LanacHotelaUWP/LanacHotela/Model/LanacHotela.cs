@@ -17,7 +17,7 @@ namespace LanacHotela
         public static string ImeLanca { get => imeLanca; set => imeLanca = value; }
         public static List<Hotel> ListaHotela { get => listaHotela; set => listaHotela = value; }
         public static List<Osoba> ListaKorisnika { get => listaKorisnika; set => listaKorisnika = value; }
-
+        
        
         public static void BrisiHotel(Hotel h)
         {
@@ -38,7 +38,7 @@ namespace LanacHotela
         {
             foreach (Osoba x in ListaKorisnika)
             {
-                if (x.Jmbg== korisnik.Jmbg) throw new Exception("Već postoji ta rezervacija za ovog korisnika");
+                if (x.jmbg== korisnik.jmbg) throw new Exception("Već postoji ta rezervacija za ovog korisnika");
 
             }
             listaKorisnika.Add(korisnik);

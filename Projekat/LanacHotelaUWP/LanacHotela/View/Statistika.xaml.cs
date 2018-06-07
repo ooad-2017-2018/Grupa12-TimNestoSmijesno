@@ -17,6 +17,7 @@ using Windows.UI.Xaml.Printing;
 using Windows.ApplicationModel.Core;
 using Windows.UI.Core;
 using LanacHotela.View;
+using System.Collections.ObjectModel;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -31,16 +32,24 @@ namespace LanacHotela
         public MojiHoteli()
         {
             this.InitializeComponent();
+            
         }
-
-        private void osvjeziuposlenike_Click(object sender, RoutedEventArgs e)
+        ObservableCollection<Uposlenik> uposlenici = new ObservableCollection<Uposlenik>();
+        private async void osvjeziuposlenike_Click(object sender, RoutedEventArgs e)
         {
             listauposlenika.Items.Clear();
             for (int i = 0; i < LanacHotela.ListaKorisnika.Count; i++)
             {
                 listauposlenika.Items.Add(LanacHotela.ListaKorisnika[i]);
             }
-
+            var lista = App.MobileService.GetTable<Uposlenik>();
+            var uposlenik = from x in lista
+                            select x;
+            var listatmp = await uposlenik.ToListAsync();
+            foreach (var x in listatmp)
+            {
+                listauposlenika.Items.Add(new Uposlenik(x.ime, x.prezime, x.korisnickoIme, x.sifra, new Image(), x.jmbg, x.datumRodjenja, x.email, x.brojTelefona, x.plata, x.datumZaposlenja, x.HotelId, x.pozicija));
+            }
         }
 
         private void dugmenazad_Click(object sender, RoutedEventArgs e)
@@ -49,13 +58,17 @@ namespace LanacHotela
             this.Content = nova;
 
         }
-
-        private void osvjezihotele_Click(object sender, RoutedEventArgs e)
+        ObservableCollection<Hotel> hoteli = new ObservableCollection<Hotel>();
+        private async void osvjezihotele_Click(object sender, RoutedEventArgs e)
         {
             listahotela.Items.Clear();
-            for (int i = 0; i < LanacHotela.ListaHotela.Count; i++)
+            var lista = App.MobileService.GetTable<Hotel>();
+            var hotel = from x in lista
+                            select x;
+            var listatmp = await hotel.ToListAsync();
+            foreach (var x in listatmp)
             {
-                listahotela.Items.Add(LanacHotela.ListaHotela[i]);
+                listahotela.Items.Add(new Hotel(x.imeHotela, x.menadzerId, x.brojZvjezdica, x.lokacija, x.brojTelefona, x.email));
             }
 
         }

@@ -66,6 +66,8 @@ namespace LanacHotela
 
         private void signup_Click(object sender, RoutedEventArgs e)
         {
+            Page nova = new RegistracijaKorisnika();
+            this.Content = nova;
 
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.WindowsAzure.MobileServices;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +8,7 @@ using Windows.UI.Xaml.Controls;
 
 namespace LanacHotela
 {
-    public static class AdminViewModel
+    public class AdminViewModel
     {
         public static void DodajUposlenika (string ime, string prezime, string korisnickoIme, string sifra, Image slika, string jmbg, DateTime datumRodjenja,
                                      string email, string brojTelefona, int plata, DateTime datumZaposlenja,  string id, string pozicija)
@@ -16,11 +17,11 @@ namespace LanacHotela
                 datumZaposlenja, id, pozicija);
             foreach(Hotel h in LanacHotela.ListaHotela) if(id==h.id)
                 {
-                    h.ListaUposlenika.Add(u);
+                   // h.ListaUposlenika.Add(u);
                 }
             foreach(Osoba o in LanacHotela.ListaKorisnika)
             {
-                if (u.Jmbg == o.Jmbg) LanacHotela.ListaKorisnika.Remove(o);
+                if (u.jmbg == o.jmbg) LanacHotela.ListaKorisnika.Remove(o);
             }
             LanacHotela.ListaKorisnika.Add(u);
 
@@ -28,61 +29,37 @@ namespace LanacHotela
 
         public static void BrisiUposlenika(Uposlenik u)
         {
-            foreach(Hotel h in LanacHotela.ListaHotela)
-            {
-                    foreach(Uposlenik p in h.ListaUposlenika)
-                    {
-                        if(p==u)
-                        {
-                            h.ListaUposlenika.Remove(p);
-                            break;
-                        }
-                    }
-                }
-            }
-        
-        public static void DodajUposlenika(Uposlenik u)
+           //prvo baza
+        }
+        IMobileServiceTable<Uposlenik> tabela = App.MobileService.GetTable<Uposlenik>();
+        public void DodajUposlenika(Uposlenik u)
         {
-            foreach(Hotel h in LanacHotela.ListaHotela)
-            {
-                if (u.id == h.id)
-                {
-                    foreach(Uposlenik p in h.ListaUposlenika)
-                    {
-                        if(p==u) throw new Exception("Već postoji taj uposlenik u hotelu");
-
-                    }
-                    h.ListaUposlenika.Add(u);
-                }
-            }
-            foreach (Osoba o in LanacHotela.ListaKorisnika)
-            {
-                if (u.Jmbg == o.Jmbg) LanacHotela.ListaKorisnika.Remove(o);
-            }
-            LanacHotela.ListaKorisnika.Add(u);
+            Uposlenik uposlenik = new Uposlenik();
+            uposlenik.ime = u.ime;
+            uposlenik.prezime = u.prezime;
+            uposlenik.korisnickoIme = u.korisnickoIme;
+            uposlenik.sifra = u.sifra;
+            uposlenik.jmbg = u.jmbg;
+            uposlenik.datumRodjenja = u.datumRodjenja;
+            uposlenik.email = u.email;
+            uposlenik.brojTelefona = u.brojTelefona;
+            uposlenik.plata = u.plata;
+            uposlenik.datumZaposlenja = u.datumZaposlenja;
+            uposlenik.datumPrestankaRada = u.datumPrestankaRada;
+            uposlenik.pozicija = u.pozicija;
+            uposlenik.HotelId = u.HotelId;
+            tabela.InsertAsync(uposlenik);
+            
         }
 
         public static void BrisiUposlenika(string nazivhotela, string imeuposlenika, string prezimeuposlenika, string jmbguposlenika)
         {
-            foreach (Hotel h in LanacHotela.ListaHotela)
-            {
-                if (h.ImeHotela == nazivhotela)
-                {
-                    foreach (Uposlenik u in h.ListaUposlenika)
-                    {
-                        if (u.Ime == imeuposlenika && u.Prezime == prezimeuposlenika && u.Jmbg == jmbguposlenika)
-                        {
-                            h.ListaUposlenika.Remove(u);
-                            break;
-                        }
-                    }
-                }
-            }
+            //prvo baza pa ovo
         }
 
         public static  void DodajHotel(global::System.String i, Uposlenik menadzer, global::System.Int32 brojZvjezdica, List<Soba> listaSoba, List<RezervacijaSmjestaja> listaRezervacija, List<Uposlenik> listaUposlenika, global::System.String lokacija, global::System.String brojTelefona, global::System.String email, List<Usluge> listaUsluga)
         {
-            Hotel h = new Hotel(i, menadzer, brojZvjezdica, listaSoba, listaRezervacija, listaUposlenika, lokacija, brojTelefona, email, listaUsluga);
+            Hotel h = new Hotel(i, menadzer.id, brojZvjezdica, lokacija, brojTelefona, email);
             foreach (Hotel x in LanacHotela.ListaHotela)
             {
                 if (x.id == h.id) throw new Exception("Već postoji ta rezervacija za ovog korisnika");
@@ -121,7 +98,7 @@ namespace LanacHotela
             foreach(Hotel x in LanacHotela.ListaHotela)
             {
                 bool nasao = false;
-                if (x.ImeHotela == ime)
+                if (x.imeHotela == ime)
                 {
                     LanacHotela.ListaHotela.Remove(x);
                     nasao = true;

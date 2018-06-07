@@ -53,7 +53,7 @@ namespace LanacHotela
 
         private void dugmeDalje_Click(object sender, RoutedEventArgs e)
         {
-            if (korisnikbox.Text == admin.KorisnickoIme  && sifrabox.Password == admin.Sifra) //iako je ovo loš način provjere
+            if (korisnikbox.Text == admin.korisnickoIme  && sifrabox.Password == admin.sifra) //iako je ovo loš način provjere
                                                                                               //sad koristimo ovo zbog jednostavnosti
             {
                 Page novi = new AdminForma();

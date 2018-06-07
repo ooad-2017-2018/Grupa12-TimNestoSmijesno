@@ -31,10 +31,11 @@ namespace LanacHotela
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+
         }
 
         public static MobileServiceClient MobileService = new
-MobileServiceClient("https://lanachotela.azurewebsites.net");
+        MobileServiceClient("https://lanachotela.azurewebsites.net");
 
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points

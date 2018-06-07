@@ -199,8 +199,7 @@
         <Button x:Name="dugmeodaberi" Content="Odaberi" Grid.Row="24" Grid.Column="2" FontSize="20" VerticalAlignment="Stretch" HorizontalAlignment="Right" MaxWidth="200" Click="dugmeodaberi_Click" />
 
         <Button x:Name="dugmeunesi" Content="Unesi" Grid.Row="26" Grid.Column="2" FontSize="20" VerticalAlignment="Stretch" HorizontalAlignment="Right" MaxWidth="200" Click="dugmeunesi_Click"/>
-        <Button x:Name="dugmenazad" Content="Nazad" Grid.Row="26" Grid.Column="2" FontSize="20" VerticalAlignment="Stretch" HorizontalAlignment="Left" MaxWidth="200" Click="dugmenazad_Click" AutomationProperties.IsRequiredForForm="True"/>
-
-    </Grid>
+            <Button x:Name="dugmenazad" Content="Nazad" Grid.Row="26" Grid.Column="2" FontSize="20" VerticalAlignment="Stretch" HorizontalAlignment="Left" MaxWidth="200" Click="dugmenazad_Click" AutomationProperties.IsRequiredForForm="True"/>
+        </Grid>
         </ScrollViewer>
 </Page>

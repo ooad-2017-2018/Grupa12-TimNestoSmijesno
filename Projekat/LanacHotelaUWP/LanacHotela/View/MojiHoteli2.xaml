@@ -25,6 +25,8 @@
                 <RowDefinition Height="5*"/>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="5*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="5*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"/>
@@ -35,7 +37,16 @@
             <Button x:Name="statistikadugme" Content="Statistika" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Stretch" Click="statistikadugme_Click" />
             <Button x:Name="dudajuposlenikadugme" Content="Dodaj uposlenika" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Stretch" Click="dudajuposlenikadugme_Click" />
             <Button x:Name="dodajkorisnikadugme" Content="Dodaj korisnika" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Stretch" Click="dodajkorisnikadugme_Click" />
+            <Grid x:Name="maligrid" Grid.Row="6" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Button x:Name="dodajhoteldugme" Content="Dodaj hotele"  Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Stretch" Click="dodajhoteldugme_Click" />
+                <Button x:Name="dodajuposlenikedugme" Content="Dodaj uposlenike"  Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Stretch" Click="dodajuposlenikedugme_Click" />
 
+            </Grid>
+            
         </Grid>
     </Grid>
 </Page>

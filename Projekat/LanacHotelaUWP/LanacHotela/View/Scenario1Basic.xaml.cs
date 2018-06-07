@@ -76,5 +76,11 @@ namespace LanacHotela.View
                 printHelper.UnregisterForPrinting();
             }
         }
+
+        private void dugmenazad_Click(object sender, RoutedEventArgs e)
+        {
+            Page nova = new MojiHoteli();
+            this.Content = nova;
+        }
     }
 }

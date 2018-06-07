@@ -50,6 +50,7 @@ namespace LanacHotela
         {
             ListaSlikaSobe.Add(slika);
         }
+        /*
         public bool ProvjeraDostupnostiSobe(DateTime dDolaska, int brojDana)
         {
             
@@ -64,7 +65,8 @@ namespace LanacHotela
                
             }
             return true;
-        }
+            
+        } */
 
     }
 }

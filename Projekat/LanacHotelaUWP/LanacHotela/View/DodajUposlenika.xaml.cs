@@ -149,7 +149,8 @@ namespace LanacHotela
                                                 Convert.ToInt32(platabox.Text), DateTime.Today, "(1000 + radnomjestobox.SelectedIndex)",
                                                 Convert.ToString(pozicijabox.SelectedItem));
 
-                AdminViewModel.DodajUposlenika(u);
+                AdminViewModel adm = new AdminViewModel();
+                adm.DodajUposlenika(u);
                 //brisemo podatke iz boxova da ih spremimo za unos novih podataka
                 imebox.Text = "";
                 prezimebox.Text = "";
@@ -187,5 +188,6 @@ namespace LanacHotela
         {
 
         }
+        
     }
 }

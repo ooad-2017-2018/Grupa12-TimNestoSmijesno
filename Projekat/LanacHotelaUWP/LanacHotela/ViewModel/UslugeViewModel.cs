@@ -9,10 +9,7 @@ namespace LanacHotela
 {
     public class UslugeViewModel
     {
-        public List<Usluge> PregledUsluga(Hotel h)
-        {
-            return h.ListaUsluga;
-        }
+        
         public List<Image> PregledSlika(Usluge u)
         {
             List<Image> lista = u.ListaSlika;

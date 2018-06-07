@@ -34,24 +34,17 @@ namespace LanacHotela
 
         }
 
-        public List<RezervacijaSmjestaja> MojeRezervacije(GostHotela g)
+       /* public List<RezervacijaSmjestaja> MojeRezervacije(GostHotela g)
         {
-            List<RezervacijaSmjestaja> lista = new List<RezervacijaSmjestaja>();
-            foreach(Hotel x in LanacHotela.ListaHotela)
-            {
-                foreach(RezervacijaSmjestaja r in x.ListaRezervacija)
-                {
-                    if (r.Korisnik == g) lista.Add(r);
-                }
-            }
-            return lista;
+           //prvo baza pa ovo
         }
+        */
 
         public void RegistracijaKorisnika(string i, string p, string j, string ki, string s, DateTime dr, string em, string bt, Image sl, string bl, string pk)
         {
             foreach(GostHotela g in LanacHotela.ListaKorisnika)
             {
-                if (g.Jmbg == j) LanacHotela.ListaKorisnika.Remove(g);
+                if (g.jmbg == j) LanacHotela.ListaKorisnika.Remove(g);
             }
             GostHotela a = new GostHotela(i, p, ki, s, sl, j, dr, em, bt, bl, pk);
             LanacHotela.ListaKorisnika.Add(a);
