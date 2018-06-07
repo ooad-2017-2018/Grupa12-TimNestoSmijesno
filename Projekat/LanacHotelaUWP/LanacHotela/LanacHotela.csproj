@@ -93,6 +93,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Model\Admin.cs" />
+    <Compile Include="Model\PrintHelper.cs" />
+    <Compile Include="Model\SampleConfiguration.cs" />
+    <Compile Include="View\ContinuationPage.xaml.cs">
+      <DependentUpon>ContinuationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PageToPrint.xaml.cs">
+      <DependentUpon>PageToPrint.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PreviewUnavailable.xaml.cs">
+      <DependentUpon>PreviewUnavailable.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\RegistracijaKorisnika.xaml.cs">
       <DependentUpon>RegistracijaKorisnika.xaml</DependentUpon>
     </Compile>
@@ -121,6 +132,9 @@
     </Compile>
     <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Scenario1Basic.xaml.cs">
+      <DependentUpon>Scenario1Basic.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Statistika.xaml.cs">
       <DependentUpon>Statistika.xaml</DependentUpon>
@@ -175,6 +189,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="View\ContinuationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\PageToPrint.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\PreviewUnavailable.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\RegistracijaKorisnika.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -194,6 +220,10 @@
     <Page Include="View\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Scenario1Basic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Statistika.xaml">
       <SubType>Designer</SubType>

@@ -23,7 +23,7 @@
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
 
-        <TextBlock x:Name="imeforme" Text="MojiHoteli" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" SelectionChanged="imeforme_SelectionChanged"/>
+        <TextBlock x:Name="imeforme" Text="MojiHoteli" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" SelectionChanged="imeforme_SelectionChanged" />
         <Button x:Name="dugmenazad" Content="Nazad" HorizontalAlignment="right" Grid.Row="0" Grid.Column="2" Click="dugmenazad_Click" />
         <TextBlock x:Name="imelistehotela" Text="Lista Hotela" HorizontalAlignment="Left" VerticalAlignment="Stretch" Grid.Row="1" Grid.Column="1" />
         <TextBlock x:Name="imelisteuposlenika" Text="Lista uposlenika" HorizontalAlignment="Left" VerticalAlignment="Stretch" Grid.Row="1" Grid.Column="2" />
@@ -32,9 +32,8 @@
         <ListView x:Name="listauposlenika" HorizontalAlignment="center"  VerticalAlignment="Top" Grid.Row="2" Grid.Column="2">
         </ListView>
         <Button x:Name="osvjezihotele" Content="Osvježi" HorizontalAlignment="left" Grid.Row="3" Grid.Column="1" Click="osvjezihotele_Click" />
-        <Button x:Name="osvjeziuposlenike" Content="Osvježi" HorizontalAlignment="left" Grid.Row="3" Grid.Column="2" Click="osvjeziuposlenike_Click" Margin="20,20,0,20" />
-        <Button x:Name="printhotele" Content="Printaj" HorizontalAlignment="right" Grid.Row="3" Grid.Column="1" Click="printhotele_Click" Margin="0,20,20,20" />
-        <Button x:Name="printuposlenike" Content="Printaj" HorizontalAlignment="Right" Grid.Row="3" Grid.Column="2" Click="printuposlenike_Click" />
+        <Button x:Name="osvjeziuposlenike" Content="Osvježi" HorizontalAlignment="Right" Grid.Row="3" Grid.Column="2" Click="osvjeziuposlenike_Click"  />
+        <Button x:Name="printpage" Content="Printaj" HorizontalAlignment="Center" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Click="printpage_Click"/>
 
     </Grid>
 </Page>

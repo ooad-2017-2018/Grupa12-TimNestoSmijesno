@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using LanacHotela;
-
-
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Documents;
 
 namespace LanacHotela
 {
@@ -19,6 +19,7 @@ namespace LanacHotela
         public static Hotel hotel2 = new Hotel("Hotel 2", jelena, 4, new List<Soba>(), new List<RezervacijaSmjestaja>(), new List<Uposlenik> {jelena}, "Sarajevo, Bosna i Hercegovina", "030/250-999", "hotel2@gmail.com", new List<Usluge>());
         public static Hotel hotel3 = new Hotel("Hotel 3", nedim, 5, new List<Soba>(), new List<RezervacijaSmjestaja>(), new List<Uposlenik> {nedim}, "Bugojno, Bosna i Hercegovina", "030/250-999", "hotel3@gmail.com", new List<Usluge>());
 
+        
 
     }
 }
